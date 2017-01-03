@@ -23,13 +23,12 @@ body {
   border-radius: 20px;
   margin-left: 10px;
 }
+.btn-guardar:hover {
+  background-color: rgb(79,140,13);
+}
 .btn-amarillo:hover {
   color: #FFF;
   background-color: rgb(237,46,56);
-}
-
-.btn-guardar:hover {
-  background-color: rgb(79,140,13);
 }
 
 .btn-verde {
