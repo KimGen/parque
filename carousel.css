@@ -25,6 +25,11 @@ body {
 }
 .btn-amarillo:hover {
   color: #FFF;
+  background-color: rgb(237,46,56);
+}
+
+.btn-guardar:hover {
+  background-color: rgb(79,140,13);
 }
 
 .btn-verde {
@@ -34,6 +39,10 @@ body {
   padding: 4px 7px;
   border-radius: 20px;
   margin-left: 10px;
+}
+
+.btn-verde:hover {
+ background-color: rgb(237,46,56);
 }
 
 /* CUSTOMIZE THE CAROUSEL
