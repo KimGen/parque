@@ -63,22 +63,18 @@ body {
 }
 #generalProgress .progress-bar {
  background-color: rgb(178,214,3);
- width: 100px;
 }
 
 #azulProgress .progress-bar {
  background-color:rgb(79,120,214);
- width: 50px;
 }
 
 #rojoProgress .progress-bar {
  background-color:rgb(237,46,56);
- width: 50px;
 }
 
 #amarilloProgress .progress-bar {
  background-color:rgb(248,201,9);
- width: 50px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
