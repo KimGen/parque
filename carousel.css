@@ -1,18 +1,10 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-@media (max-width: 1260px) {
-body {
-  height: 1024px;
-  color: #5a5a5a;
-}
-}
-
-@media (max-width: 1024px) {
+/* Para pantallas de 1024 x 768 */
 body {
   height: 768px;
   color: #5a5a5a;
-}
 }
 
 
