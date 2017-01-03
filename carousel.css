@@ -2,9 +2,24 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+@media (max-width: 1024px) {
+body {
+  height: 768px;
+  color: #5a5a5a;
+}
+}
+
+@media (max-width: 1260px) {
 body {
   width: 100%;
   color: #5a5a5a;
+}
+}
+@media (min-width: 1260px) {
+body {
+  width: 100%;
+  color: #5a5a5a;
+}
 }
 
 
