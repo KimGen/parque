@@ -48,6 +48,16 @@ body {
  background-color: rgb(237,46,56);
 }
 
+/* Progress  bar
+-------------------------------------------------- */
+
+progress {
+ background-color:rgb(184,235,255);
+ height: 3em;
+ width: 5em;
+}
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
