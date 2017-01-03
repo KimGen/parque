@@ -51,13 +51,30 @@ body {
 /* Progress  bar
 -------------------------------------------------- */
 
-progress {
- color: #FFF;
- background-color: rgb(184,235,255);
- height: 1.4em;
- width: 4em;
- border-radius: 20px;
+.progress {
+ margin-top: 15px;
+ margin-bottom: 15px;
+ width: 40px
 }
+
+#generalProgress .progress-bar {
+ background-color: rgb(178,214,3);
+}
+
+#azulProgress .progress-bar {
+ background-color:rgb(79,120,214);
+}
+
+#rojoProgress .progress-bar {
+ background-color:rgb(237,46,56);
+}
+
+#amarilloProgress .progress-bar {
+ background-color:rgb(248,201,9);
+}
+
+
+background-color
 
 
 /* CUSTOMIZE THE CAROUSEL
