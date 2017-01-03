@@ -44,6 +44,10 @@ body {
  background-color: rgb(237,46,56);
 }
 
+.btn-dropdown:hover{
+ background-color: rgb(237,46,56);
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
