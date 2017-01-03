@@ -54,9 +54,13 @@ body {
 .progress {
  margin-top: 15px;
  margin-bottom: 15px;
- width: 40px
+ width: 50px;
+ margin-left: 10px;
 }
 
+#generalProgress {
+ width: 100px;
+}
 #generalProgress .progress-bar {
  background-color: rgb(178,214,3);
 }
@@ -72,10 +76,6 @@ body {
 #amarilloProgress .progress-bar {
  background-color:rgb(248,201,9);
 }
-
-
-background-color
-
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
