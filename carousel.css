@@ -13,6 +13,20 @@ body {
   margin-bottom: 0px;
 }
 
+/* Botones
+-------------------------------------------------- */
+.btn-amarillo {
+  color: #000;
+  background-color: rgb(255,191,0);
+  border-color: rgb(215,215,215);
+}
+
+.btn-verde {
+  color: #FFF;
+  background-color: rgb(79,140,13);
+  border-color: rgb(215,215,215);
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
