@@ -19,12 +19,18 @@ body {
   color: #000;
   background-color: rgb(255,191,0);
   border-color: rgb(215,215,215);
+  padding: 4px 7px;
+  border-radius: 20px;
+  margin-left: 10px;
 }
 
 .btn-verde {
   color: #FFF;
   background-color: rgb(79,140,13);
   border-color: rgb(215,215,215);
+  padding: 4px 7px;
+  border-radius: 20px;
+  margin-left: 10px;
 }
 
 /* CUSTOMIZE THE CAROUSEL
