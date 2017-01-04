@@ -86,6 +86,17 @@ body {
  float: left;
 }
 
+/* dropdown
+-------------------------------------------------- */
+
+.text-vertical {
+	transform: rotate(-90deg);
+	transform-origin: left top 0;
+  float: left;
+}
+
+
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
