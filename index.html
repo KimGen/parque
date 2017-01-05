@@ -368,6 +368,18 @@
 
 	  
 	 function premio1_click() {
+	 show_hide('popup-kimgen');
+	 document.getElementById("popup-kimgen").innerHTML = "";
+	 var imagen1 = document.createElement("img");
+	 imagen1.setAttribute("src", "assets/img/premio1.png");
+	 imagen1.setAttribute("id", "imagen1");
+	 $("#popup-kimgen").append(imagen1);
+	 var imagen2 = document.createElement("img");
+	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
+	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
+	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
+	 $("#popup-kimgen").append(imagen2);
+	 
 	 }
 	 function premio2_click() {
 	 	    alert("Esta Bloqueada!");
@@ -466,7 +478,11 @@
 	 }
 	 function desafioEsp4_click() {
 	    alert("Esta Bloqueada!");
-	 }	 
+	 }	
+	 function cerrar_popup_kimgen_click() {
+	    show_hide('popup-kimgen');
+	 }		 
+	 
 	 function show_hide(id){
   if (document.getElementById){
   var el = document.getElementById(id);
