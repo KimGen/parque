@@ -88,7 +88,7 @@
         </div>
         <div class="item active">
           <img class="third-slide" src="assets/img/zonasur.jpg" alt="Third slide">
-          <div class="container">
+          <div class="container" id="zonasur">
           </div>
         </div>
         <div class="item">
@@ -143,7 +143,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default">Recuperar partida</button>
-        <button type="button" class="btn btn-primary">Nueva Partida</button>
+        <button type="button" class="btn btn-primary" id="nueva-partida">Nueva Partida</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
@@ -153,7 +153,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script>
+    <script type="text/javascript">
       window.onload = function () {
        $('#login').modal('show');
        $('#myCarousel').carousel('pause')
@@ -163,6 +163,24 @@
         document.getElementById("login-name").innerHTML = document.getElementById("exampleInputEmail1").value;
         $('#partidas').modal('show');
       });
+	  
+	   document.getElementById("nueva-partida").addEventListener("click", function(){
+        $('#partidas').modal('hide');
+        var premio1 = document.createElement("img");
+		var premio2 = document.createElement("img");
+	    var premio3 = document.createElement("img");
+        premio1.setAttribute("src", "assets/img/premio.png");
+		premio2.setAttribute("src", "assets/img/premio-lock.png");
+		premio3.setAttribute("src", "assets/img/premio-lock.png");
+		premio1.attr('id', 'premio1');
+		premio2.attr('id', 'premio2');
+		premio3.attr('id', 'premio3');
+
+        $("#zonasur").append(premio1);
+		$("#zonasur").append(premio2);
+		$("#zonasur").append(premio3);
+      });
+
       </script>
   </body>
 </html>
