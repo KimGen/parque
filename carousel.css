@@ -406,3 +406,6 @@ body {
 	display: inline-block;
 		cursor:pointer;
 }
+.carousel-control {
+width: 5% !important;
+}
