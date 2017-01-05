@@ -18,9 +18,9 @@
         <nav class="navbar navbar-inverse navbar-static-top">
           <div class="container">
             <div id="navbar" class="navbar-collapse collapse">
-              <button type="button" class="btn btn-amarillo navbar-btn"><span class="glyphicon glyphicon-home"></span></button>
-              <button type="button" class="btn btn-amarillo navbar-btn"><span class="glyphicon glyphicon-arrow-left"></span></button>
-              <button type="button" class="btn btn-amarillo btn-guardar navbar-btn"><span class="glyphicon glyphicon-floppy-disk"></span></button>
+              <button type="button" class="btn btn-amarillo navbar-btn" id="ir-home"><span class="glyphicon glyphicon-home"></span></button>
+              <button type="button" class="btn btn-amarillo navbar-btn" id="ir-domo"><span class="glyphicon glyphicon-arrow-left"></span></button>
+              <button type="button" class="btn btn-amarillo btn-guardar navbar-btn" data-toggle="modal" data-target="#partida-guardada"><span class="glyphicon glyphicon-floppy-disk"></span></button>
               <button type="button" class="btn btn-verde navbar-btn navbar-right"><span class="glyphicon glyphicon-remove"></span></button>
               <button type="button" class="btn btn-verde navbar-btn btn-dropdown navbar-right" id="mostrar-tarjeta"><span class="glyphicon glyphicon-arrow-down"></span></button>
               <div class="dropdown-menu" id="contenedorTarjeta" style="display:block;">
@@ -148,6 +148,35 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="partida-guardada">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Partida Guardada</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="no-conectado">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Partida Guardada</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -162,6 +191,16 @@
         $('#login').modal('hide');
         document.getElementById("login-name").innerHTML = document.getElementById("exampleInputEmail1").value;
         $('#partidas').modal('show');
+      });
+	  
+	  document.getElementById("ir-home").addEventListener("click", function(){
+        $('#login').modal('hide');
+        document.getElementById("login-name").innerHTML = document.getElementById("exampleInputEmail1").value;
+        $('#partidas').modal('show');
+      });
+	  
+	  document.getElementById("ir-domo").addEventListener("click", function(){
+        $('#no-conectado').modal('show');
       });
 	  
 	   document.getElementById("nueva-partida").addEventListener("click", function(){
