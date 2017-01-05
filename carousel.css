@@ -412,7 +412,7 @@ width: 5% !important;
 
 .popup-kimgen{
 	position: absolute;
-    top: 20px;
+    top: 50px;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -421,4 +421,8 @@ width: 5% !important;
     background-image: -o-linear-gradient(left,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
     background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.5)),to(rgba(0,0,0,.0001)));
     background-image: linear-gradient(to right,rgba(0,0,0,.5) 0,rgba(0,0,0,.0001) 100%);
+}
+#imagen1{
+	margin-top:60px;
+	
 }
