@@ -76,7 +76,7 @@
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
-        <div class="item active">
+        <div class="item">
           <img class="first-slide" src="assets/img/zonanorte.jpg" alt="First slide">
           <div class="container">
           </div>
@@ -86,7 +86,7 @@
           <div class="container">
           </div>
         </div>
-        <div class="item">
+        <div class="item active">
           <img class="third-slide" src="assets/img/zonasur.jpg" alt="Third slide">
           <div class="container">
           </div>
@@ -156,6 +156,7 @@
     <script>
       window.onload = function () {
        $('#login').modal('show');
+       $('#myCarousel').carousel('pause')
 }
       document.getElementById("iniciar-sesion").addEventListener("click", function(){
         $('#login').modal('hide');
