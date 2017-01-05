@@ -167,115 +167,212 @@ body {
 
 #premio1{
 	position: absolute;
-	top: 10%;
-	right:5;
+	top: 20%;
+	left:12%;
 	z-index: 5;
 	display: inline-block;
 }
 #premio2{
-	
+	position: absolute;
+	top: 40%;
+	left:12%;
+	z-index: 5;
+	display: inline-block;
 }
 #premio3{
-	
+			position: absolute;
+	top: 60%;
+	left:24%;
+	z-index: 5;
+	display: inline-block;
 }
 #misterio1{
 	position: absolute;
-	top: 10%;
-	right:10;
+	top: 20%;
+	left:24%;
 	z-index: 5;
 	display: inline-block;
 }
 #misterio2{
-	
+	position: absolute;
+	top: 40%;
+	left:24%;
+	z-index: 5;
+	display: inline-block;
 }
 #misterio3{
-	
+		position: absolute;
+	top: 60%;
+	left:12%;
+	z-index: 5;
+	display: inline-block;
 }
 #conocimiento1{
 	position: absolute;
-	top: 10%;
-	right:15;
+	top: 20%;
+	left:36;
 	z-index: 5;
 	display: inline-block;
 }
 #conocimiento2{
-	
+		position: absolute;
+	top: 40%;
+	left:36%;
+	z-index: 5;
+	display: inline-block;
 }
 #conocimiento3{
-	
+		position: absolute;
+	top: 40%;
+	left:84%;
+	z-index: 5;
+	display: inline-block;
 }
 #conocimiento4{
-	
+			position: absolute;
+	top: 60%;
+	left:36%;
+	z-index: 5;
+	display: inline-block;
 }
 #conocimiento5{
-	
+			position: absolute;
+	top: 60%;
+	left:84%;
+	z-index: 5;
+	display: inline-block;
 }
 #fantasma1{
 	position: absolute;
-	top: 10%;
-	right:20;
+	top: 20%;
+	left:48%;
 	z-index: 5;
 	display: inline-block;
 }
 #fantasma2{
-	
+		position: absolute;
+	top: 40%;
+	left:48%;
+	z-index: 5;
+	display: inline-block;
 }
 #fantasma3{
-	
+			position: absolute;
+	top: 60%;
+	left:48%;
+	z-index: 5;
+	display: inline-block;
 }
 #fantasma4{
-	
+			position: absolute;
+	top: 60%;
+	left:96%;
+	z-index: 5;
+	display: inline-block;
 }
 #fantasma5{
-	
+			position: absolute;
+	top: 80%;
+	left:12%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafio1{
 	position: absolute;
-	top: 10%;
-	right:25;
+	top: 20%;
+	left:60%;
 	z-index: 5;
 	display: inline-block;
 }
 #desafio2{
-	
+	position: absolute;
+	top: 20%;
+	left:84%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafio3{
+		position: absolute;
+	top: 40%;
+	left:60%;
+	z-index: 5;
+	display: inline-block;
 	
 }
 #desafio4{
-	
+		position: absolute;
+	top: 40%;
+	left:96%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafio5{
-	
+			position: absolute;
+	top: 60%;
+	left:60%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafio6{
-	
+			position: absolute;
+	top: 60%;
+	left:24%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafio7{
-	
+		position: absolute;
+	top: 60%;
+	left:48%;
+	z-index: 5;
+	display: inline-block;	
 }
 #desafio8{
-	
+			position: absolute;
+	top: 60%;
+	left:60%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafio9{
-	
+			position: absolute;
+	top: 60%;
+	left:72%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafio10{
-	
+			position: absolute;
+	top: 60%;
+	left:84%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafioEsp1{
 	position: absolute;
-	top: 10%;
-	right:30;
+	top: 20%;
+	left:72%;
 	z-index: 5;
 	display: inline-block;
 }
 #desafioEsp2{
-	
+		position: absolute;
+	top: 40%;
+	left:72%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafioEsp3{
-	
+			position: absolute;
+	top: 60%;
+	left:72%;
+	z-index: 5;
+	display: inline-block;
 }
 #desafioEsp4{
-	
+			position: absolute;
+	top: 60%;
+	left:36%;
+	z-index: 5;
+	display: inline-block;
 }
