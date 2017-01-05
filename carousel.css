@@ -167,7 +167,7 @@ body {
 
 #premio1{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left:12%;
 	z-index: 5;
 	display: inline-block;
@@ -188,7 +188,7 @@ body {
 }
 #misterio1{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left:24%;
 	z-index: 5;
 	display: inline-block;
@@ -209,8 +209,8 @@ body {
 }
 #conocimiento1{
 	position: absolute;
-	top: 20%;
-	left:36;
+	top: 25%;
+	left:36%;
 	z-index: 5;
 	display: inline-block;
 }
@@ -244,7 +244,7 @@ body {
 }
 #fantasma1{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left:48%;
 	z-index: 5;
 	display: inline-block;
@@ -279,14 +279,14 @@ body {
 }
 #desafio1{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left:60%;
 	z-index: 5;
 	display: inline-block;
 }
 #desafio2{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left:84%;
 	z-index: 5;
 	display: inline-block;
@@ -350,7 +350,7 @@ body {
 }
 #desafioEsp1{
 	position: absolute;
-	top: 20%;
+	top: 25%;
 	left:72%;
 	z-index: 5;
 	display: inline-block;
