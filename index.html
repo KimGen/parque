@@ -376,9 +376,12 @@
 	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
 	 $("#popup-kimgen").append(imagen2);
 	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/premio1.jpg");
+	 imagen1.setAttribute("src", "assets/img/premio1.png");
 	 imagen1.setAttribute("id", "imagen1");
 	 $("#popup-kimgen").append(imagen1);
+	 document.getElementById("conocimiento1").setAttribute("src", "assets/img/sabiasq-lock.png");
+	 document.getElementById("conocimiento1").removeAttribute("click");
+	 document.getElementById("conocimiento1").imagen2.addEventListener("click", desafioEsp4_click);
 	 
 	 }
 	 function premio2_click() {
