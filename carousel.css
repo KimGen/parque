@@ -164,248 +164,136 @@ body {
   }
 }
 
+/* Pinchos
+-------------------------------------------------- */
+.pincho {
+	position: absolute;	
+	z-index: 5;
+	display: inline-block;
+	cursor:pointer;
+}
 
-#premio1{
-	position: absolute;
+.ubic1 {
 	top: 25%;
+	left:13%;
+}
+.ubic2 {
+	top: 25%;
+	left:25%;
+}
+.ubic3 {
+	top: 25%;
+	left:37%;
+}
+.ubic4 {
+	top: 25%;
+	left:49%;
+}
+.ubic5 {
+	top: 25%;
+	left:61%;
+}
+.ubic6 {
+	top: 25%;
+	left:73%;
+}
+.ubic7 {
+	top: 42%;
 	left:12%;
-	z-index: 5;
-	display: inline-block;
-	cursor:pointer;
 }
-#premio2{
-	position: absolute;
-	top: 40%;
+.ubic8 {
+	top: 42%;
 	left:12%;
-	z-index: 5;
-	display: inline-block;
-	cursor:pointer;
 }
-#premio3{
-			position: absolute;
-	top: 80%;
-	left:24%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#misterio1{
-	position: absolute;
-	top: 25%;
-	left:24%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#misterio2{
-	position: absolute;
-	top: 40%;
-	left:24%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#misterio3{
-		position: absolute;
-	top: 60%;
+.ubic9 {
+	top: 42%;
 	left:12%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
 }
-#conocimiento1{
-	position: absolute;
-	top: 25%;
-	left:36%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic10 {
+	top: 42%;
+	left:12%;
 }
-#conocimiento2{
-		position: absolute;
-	top: 40%;
-	left:36%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic11 {
+	top: 42%;
+	left:12%;
 }
-#conocimiento3{
-		position: absolute;
-	top: 40%;
-	left:84%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic12 {
+	top: 42%;
+	left:12%;
 }
-#conocimiento4{
-			position: absolute;
-	top: 60%;
-	left:36%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic13 {
+	top: 65%;
+	left:12%;
 }
-#conocimiento5{
-			position: absolute;
-	top: 60%;
-	left:84%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic14 {
+	top: 65%;
+	left:12%;
 }
-#fantasma1{
-	position: absolute;
-	top: 25%;
-	left:48%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic15 {
+	top: 65%;
+	left:12%;
 }
-#fantasma2{
-		position: absolute;
-	top: 40%;
-	left:48%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic16 {
+	top: 65%;
+	left:12%;
 }
-#fantasma3{
-			position: absolute;
-	top: 60%;
-	left:48%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic17 {
+	top: 65%;
+	left:12%;
 }
-#fantasma4{
-			position: absolute;
-	top: 60%;
-	left:96%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic18 {
+	top: 65%;
+	left:12%;
 }
-#fantasma5{
-			position: absolute;
+.ubic19 {
 	top: 80%;
 	left:12%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
 }
-#desafio1{
-	position: absolute;
+.ubic20 {
+	top: 80%;
+	left:12%;
+}
+.ubic21 {
+	top: 80%;
+	left:12%;
+}
+.ubic22 {
+	top: 80%;
+	left:12%;
+}
+.ubic23 {
+	top: 80%;
+	left:12%;
+}
+.ubic24 {
+	top: 80%;
+	left:12%;
+}
+.ubic25 {
+	top: 80%;
+	left:12%;
+}
+.ubic26 {
 	top: 25%;
-	left:60%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+	left:12%;
 }
-#desafio2{
-	position: absolute;
+.ubic27 {
 	top: 25%;
-	left:84%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+	left:12%;
 }
-#desafio3{
-		position: absolute;
-	top: 40%;
-	left:60%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-	
-}
-#desafio4{
-		position: absolute;
-	top: 40%;
-	left:96%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#desafio5{
-			position: absolute;
-	top: 60%;
-	left:60%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#desafio6{
-			position: absolute;
-	top: 60%;
-	left:24%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#desafio7{
-		position: absolute;
-	top: 60%;
-	left:48%;
-	z-index: 5;
-	display: inline-block;	
-		cursor:pointer;
-}
-#desafio8{
-			position: absolute;
-	top: 60%;
-	left:60%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#desafio9{
-			position: absolute;
-	top: 60%;
-	left:72%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#desafio10{
-			position: absolute;
-	top: 60%;
-	left:84%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
-#desafioEsp1{
-	position: absolute;
+.ubic28 {
 	top: 25%;
-	left:72%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+	left:12%;
 }
-#desafioEsp2{
-		position: absolute;
-	top: 40%;
-	left:72%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic29 {
+	top: 25%;
+	left:12%;
 }
-#desafioEsp3{
-			position: absolute;
-	top: 60%;
-	left:72%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
+.ubic30 {
+	top: 25%;
+	left:12%;
 }
-#desafioEsp4{
-			position: absolute;
-	top: 60%;
-	left:36%;
-	z-index: 5;
-	display: inline-block;
-		cursor:pointer;
-}
+
 .carousel-control {
 width: 5% !important;
 }
