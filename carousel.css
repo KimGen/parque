@@ -426,7 +426,7 @@ width: 5% !important;
 	margin-top:60px;
 	
 }
-.cerrar-popup-kimgen{
+#cerrar-popup-kimgen{
 	position: absolute;
 	top: 15px;
 	left:0;
