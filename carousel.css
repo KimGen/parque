@@ -429,8 +429,8 @@ width: 5% !important;
 .cerrar-popup-kimgen{
 	position: absolute;
 	top: 15px;
-	right:0;
-	z-index: 5;
+	left:0;
+	z-index: 10;
 	display: inline-block;
 	cursor:pointer;
 }
