@@ -331,7 +331,7 @@
         $("#zonasur").append(desafioEsp3);
         $("#zonasur").append(desafioEsp4);
 
-		$("premio1").bind( "click", premio1_click);
+		$( "body" ).on( "click", "#premio1", premio1_click )
 		premio2.addEventListener("click", premio2_click);
 	    premio3.addEventListener("click", premio3_click);
 		misterio1.addEventListener("click", misterio1_click);
