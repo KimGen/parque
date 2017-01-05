@@ -332,35 +332,35 @@
         $("#zonasur").append(desafioEsp4);
 
 		$( "body" ).on( "click", "#premio1", premio1_click )
-		premio2.addEventListener("click", premio2_click);
-	    premio3.addEventListener("click", premio3_click);
-		misterio1.addEventListener("click", misterio1_click);
-		misterio2.addEventListener("click", misterio2_click);
-	    misterio3.addEventListener("click", misterio3_click);
-		conocimiento1.addEventListener("click", conocimiento1_click);
-		conocimiento2.addEventListener("click", conocimiento2_click);
-	    conocimiento3.addEventListener("click", conocimiento3_click);
-	    conocimiento4.addEventListener("click", conocimiento4_click);
-	    conocimiento5.addEventListener("click", conocimiento4_click);
-	    fantasma1.addEventListener("click", fantasma1_click);
-	    fantasma2.addEventListener("click", fantasma2_click);
-	    fantasma3.addEventListener("click", fantasma3_click);
-	    fantasma4.addEventListener("click", fantasma4_click);
-	    fantasma5.addEventListener("click", fantasma4_click);
-	    desafio1.addEventListener("click", desafio1_click);
-	    desafio2.addEventListener("click", desafio2_click);
-	    desafio3.addEventListener("click", desafio3_click);
-	    desafio4.addEventListener("click", desafio4_click);
-	    desafio5.addEventListener("click", desafio5_click);
-	    desafio6.addEventListener("click", desafio6_click);
-	    desafio7.addEventListener("click", desafio7_click);
-	    desafio8.addEventListener("click", desafio8_click);
-	    desafio9.addEventListener("click", desafio9_click);
-	    desafio10.addEventListener("click", desafio10_click);
-	    desafioEsp1.addEventListener("click", desafioEsp1_click);
-	    desafioEsp2.addEventListener("click", desafioEsp2_click);
-	    desafioEsp3.addEventListener("click", desafioEsp3_click);
-	    desafioEsp4.addEventListener("click", desafioEsp4_click);
+		$( "body" ).on( "click", "#premio2", premio2_click);
+	    $( "body" ).on( "click", "#premio3", premio3_click);
+		$( "body" ).on( "click", "#misterio1", misterio1_click);
+		$( "body" ).on( "click", "#misterio2", misterio2_click);
+	    $( "body" ).on( "click", "#misterio3", misterio3_click);
+		$( "body" ).on( "click", "#conocimiento1", conocimiento1_click);
+		$( "body" ).on( "click", "#conocimiento2", conocimiento2_click);
+	    $( "body" ).on( "click", "#conocimiento3", conocimiento3_click);
+	    $( "body" ).on( "click", "#conocimiento4", conocimiento4_click);
+	    $( "body" ).on( "click", "#conocimiento5", conocimiento4_click);
+	    $( "body" ).on( "click", "#fantasma1", fantasma1_click);
+	    $( "body" ).on( "click", "#fantasma2", fantasma2_click);
+	    $( "body" ).on( "click", "#fantasma3", fantasma3_click);
+	    $( "body" ).on( "click", "#fantasma4", fantasma4_click);
+	    $( "body" ).on( "click", "#fantasma5", fantasma4_click);
+	    $( "body" ).on( "click", "#desafio1", desafio1_click);
+	    $( "body" ).on( "click", "#desafio2", desafio2_click);
+	    $( "body" ).on( "click", "#desafio3", desafio3_click);
+	    $( "body" ).on( "click", "#desafio4", desafio4_click);
+	    $( "body" ).on( "click", "#desafio5", desafio5_click);
+	    $( "body" ).on( "click", "#desafio6", desafio6_click);
+	    $( "body" ).on( "click", "#desafio7", desafio7_click);
+	    $( "body" ).on( "click", "#desafio8", desafio8_click);
+	    $( "body" ).on( "click", "#desafio9", desafio9_click);
+	    $( "body" ).on( "click", "#desafio10", desafio10_click);
+	    $( "body" ).on( "click", "#desafioEsp1", desafioEsp1_click);
+	    $( "body" ).on( "click", "#desafioEsp2", desafioEsp2_click);
+	    $( "body" ).on( "click", "#desafioEsp3", desafioEsp3_click);
+	    $( "body" ).on( "click", "#desafioEsp4", desafioEsp4_click);
 		
       });
 
@@ -407,6 +407,9 @@
 	 imagen1.setAttribute("src", "assets/img/sabiasq1.png");
 	 imagen1.setAttribute("id", "imagen1");
 	 $("#popup-kimgen").append(imagen1);
+	 document.getElementById("conocimiento1").setAttribute("src", "assets/img/sabiasq-lock.png");
+	 $( "body" ).off( "click", "#conocimiento1", conocimiento1_click )
+	 document.getElementById("conocimiento1").addEventListener("click", desafioEsp4_click);
 	 }
 	 function conocimiento2_click() {
 	 	 show_hide('popup-kimgen');
@@ -419,6 +422,9 @@
 	 imagen1.setAttribute("src", "assets/img/sabiasq2.png");
 	 imagen1.setAttribute("id", "imagen1");
 	 $("#popup-kimgen").append(imagen1);
+	 document.getElementById("conocimiento2").setAttribute("src", "assets/img/sabiasq-lock.png");
+	 $( "body" ).off( "click", "#conocimiento2", conocimiento2_click )
+	 document.getElementById("conocimiento2").addEventListener("click", desafioEsp4_click);
 	 }
  	 function conocimiento3_click() {
 	 	 show_hide('popup-kimgen');
@@ -431,6 +437,9 @@
 	 imagen1.setAttribute("src", "assets/img/sabiasq3.png");
 	 imagen1.setAttribute("id", "imagen1");
 	 $("#popup-kimgen").append(imagen1);
+	 document.getElementById("conocimiento3").setAttribute("src", "assets/img/sabiasq-lock.png");
+	 $( "body" ).off( "click", "#conocimiento3", conocimiento3_click )
+	 document.getElementById("conocimiento3").addEventListener("click", desafioEsp4_click);
 	 }
  	 function conocimiento4_click() {
 	 	 show_hide('popup-kimgen');
@@ -443,6 +452,9 @@
 	 imagen1.setAttribute("src", "assets/img/sabiasq4.png");
 	 imagen1.setAttribute("id", "imagen1");
 	 $("#popup-kimgen").append(imagen1);
+	 document.getElementById("conocimiento4").setAttribute("src", "assets/img/sabiasq-lock.png");
+	 $( "body" ).off( "click", "#conocimiento4", conocimiento4_click )
+	 document.getElementById("conocimiento4").addEventListener("click", desafioEsp4_click);
 	 }
  	 function conocimiento5_click() {
 	 show_hide('popup-kimgen');
@@ -455,6 +467,9 @@
 	 imagen1.setAttribute("src", "assets/img/sabiasq5.png");
 	 imagen1.setAttribute("id", "imagen1");
 	 $("#popup-kimgen").append(imagen1);
+	 document.getElementById("conocimiento5").setAttribute("src", "assets/img/sabiasq-lock.png");
+	 $( "body" ).off( "click", "#conocimiento5", conocimiento5_click )
+	 document.getElementById("conocimiento5").addEventListener("click", desafioEsp4_click);
 	 }
 	 function fantasma1_click() {
 	 }
