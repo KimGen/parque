@@ -380,7 +380,7 @@
 	 imagen1.setAttribute("id", "imagen1");
 	 $("#popup-kimgen").append(imagen1);
 	 document.getElementById("premio1").setAttribute("src", "assets/img/premio-no.png");
-	 $("#premio1").unbind( "click", premio1_click );
+	 $( "body" ).off( "click", "#premio1", premio1_click )
 	 document.getElementById("premio1").addEventListener("click", desafioEsp4_click);
 	 
 	 }
