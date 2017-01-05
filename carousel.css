@@ -183,7 +183,7 @@ body {
 }
 #premio3{
 			position: absolute;
-	top: 60%;
+	top: 80%;
 	left:24%;
 	z-index: 5;
 	display: inline-block;
@@ -412,7 +412,7 @@ width: 5% !important;
 
 .popup-kimgen{
 	position: absolute;
-    top: 0;
+    top: 20px;
     bottom: 0;
     left: 0;
     width: 100%;
