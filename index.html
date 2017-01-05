@@ -77,23 +77,23 @@
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <div class="item">
-          <img class="first-slide" src="assets/img/zonanorte.jpg" alt="First slide">
-          <div class="container">
+          <img class="first-slide" src="assets/img/zonanorte.jpg" alt="Zona Norte de Chile">
+          <div class="container" id="zonanorte>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="assets/img/zonacentro.jpg" alt="Second slide">
-          <div class="container">
+          <img class="second-slide" src="assets/img/zonacentro.jpg" alt="Zona Centro de Chile">
+          <div class="container" id="zonacentro">
           </div>
         </div>
         <div class="item active">
-          <img class="third-slide" src="assets/img/zonasur.jpg" alt="Third slide">
+          <img class="third-slide" src="assets/img/zonasur.jpg" alt="Zona Sur de Chile">
           <div class="container" id="zonasur">
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="assets/img/zonaustral.jpg" alt="Third slide">
-          <div class="container">
+          <img class="third-slide" src="assets/img/zonaustral.jpg" alt="Zona Austral de Chile">
+          <div class="container" id="zonaustral">
           </div>
         </div>
 	    <img src="assets/img/barra-comunicador.png" style="position: absolute;top: 70%;right:0;z-index: 5;display: inline-block;" id="barra-comunicador">
@@ -205,435 +205,831 @@
 	  
 	   document.getElementById("nueva-partida").addEventListener("click", function(){
         $('#partidas').modal('hide');
-        var premio1 = document.createElement("img");
-		var premio2 = document.createElement("img");
-	    var premio3 = document.createElement("img");
-		var misterio1 = document.createElement("img");
-		var misterio2 = document.createElement("img");
-	    var misterio3 = document.createElement("img");
-		var conocimiento1 = document.createElement("img");
-		var conocimiento2 = document.createElement("img");
-	    var conocimiento3 = document.createElement("img");
-	    var conocimiento4 = document.createElement("img");
-	    var conocimiento5 = document.createElement("img");
-	    var fantasma1 = document.createElement("img");
-	    var fantasma2 = document.createElement("img");
-	    var fantasma3 = document.createElement("img");
-	    var fantasma4 = document.createElement("img");
-	    var fantasma5 = document.createElement("img");
-	    var desafio1 = document.createElement("img");
-	    var desafio2 = document.createElement("img");
-	    var desafio3 = document.createElement("img");
-	    var desafio4 = document.createElement("img");
-	    var desafio5 = document.createElement("img");
-	    var desafio6 = document.createElement("img");
-	    var desafio7 = document.createElement("img");
-	    var desafio8 = document.createElement("img");
-	    var desafio9 = document.createElement("img");
-	    var desafio10 = document.createElement("img");
-	    var desafioEsp1 = document.createElement("img");
-	    var desafioEsp2 = document.createElement("img");
-	    var desafioEsp3 = document.createElement("img");
-	    var desafioEsp4 = document.createElement("img");
 		
+		var zona1_premio1 = document.createElement("img");
+		var zona1_premio2 = document.createElement("img");
+	    var zona1_premio3 = document.createElement("img");
+		var zona1_misterio1 = document.createElement("img");
+		var zona1_misterio2 = document.createElement("img");
+	    var zona1_misterio3 = document.createElement("img");
+		var zona1_conocimiento1 = document.createElement("img");
+		var zona1_conocimiento2 = document.createElement("img");
+	    var zona1_conocimiento3 = document.createElement("img");
+	    var zona1_conocimiento4 = document.createElement("img");
+	    var zona1_conocimiento5 = document.createElement("img");
+	    var zona1_desafio1 = document.createElement("img");
+	    var zona1_desafio2 = document.createElement("img");
+	    var zona1_desafio3 = document.createElement("img");
+	    var zona1_desafio4 = document.createElement("img");
+	    var zona1_desafio5 = document.createElement("img");
+	    var zona1_desafio6 = document.createElement("img");
+	    var zona1_desafio7 = document.createElement("img");
+	    var zona1_desafio8 = document.createElement("img");
+	    var zona1_desafio9 = document.createElement("img");
+	    var zona1_desafio10 = document.createElement("img");
+	    var zona1_desafioEsp1 = document.createElement("img");
+	    var zona1_desafioEsp2 = document.createElement("img");
+	    var zona1_desafioEsp3 = document.createElement("img");
+	    var zona1_desafioEsp4 = document.createElement("img");
 		
-		premio1.setAttribute("src", "assets/img/premio.png");
-		premio2.setAttribute("src", "assets/img/premio-lock.png");
-	    premio3.setAttribute("src", "assets/img/premio-lock.png");
-		misterio1.setAttribute("src", "assets/img/pregunta.png");
-		misterio2.setAttribute("src", "assets/img/pregunta.png");
-	    misterio3.setAttribute("src", "assets/img/pregunta.png");
-		conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
-		conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
-	    conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
-	    conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
-	    conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
-	    fantasma1.setAttribute("src", "assets/img/pregunta-lock.png");
-	    fantasma2.setAttribute("src", "assets/img/pregunta-lock.png");
-	    fantasma3.setAttribute("src", "assets/img/pregunta-lock.png");
-	    fantasma4.setAttribute("src", "assets/img/pregunta-lock.png");
-	    fantasma5.setAttribute("src", "assets/img/pregunta-lock.png");
-	    desafio1.setAttribute("src", "assets/img/otro.png");
-	    desafio2.setAttribute("src", "assets/img/otro.png");
-	    desafio3.setAttribute("src", "assets/img/otro.png");
-	    desafio4.setAttribute("src", "assets/img/otro.png");
-	    desafio5.setAttribute("src", "assets/img/otro.png");
-	    desafio6.setAttribute("src", "assets/img/otro.png");
-	    desafio7.setAttribute("src", "assets/img/otro.png");
-	    desafio8.setAttribute("src", "assets/img/otro.png");
-	    desafio9.setAttribute("src", "assets/img/otro.png");
-	    desafio10.setAttribute("src", "assets/img/otro.png");
-	    desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
-	    desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
-	    desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
-	    desafioEsp4.setAttribute("src", "assets/img/kimgen-lock.png");
+		var zona2_premio1 = document.createElement("img");
+		var zona2_premio2 = document.createElement("img");
+	    var zona2_premio3 = document.createElement("img");
+		var zona2_misterio1 = document.createElement("img");
+		var zona2_misterio2 = document.createElement("img");
+	    var zona2_misterio3 = document.createElement("img");
+		var zona2_conocimiento1 = document.createElement("img");
+		var zona2_conocimiento2 = document.createElement("img");
+	    var zona2_conocimiento3 = document.createElement("img");
+	    var zona2_conocimiento4 = document.createElement("img");
+	    var zona2_conocimiento5 = document.createElement("img");
+	    var zona2_desafio1 = document.createElement("img");
+	    var zona2_desafio2 = document.createElement("img");
+	    var zona2_desafio3 = document.createElement("img");
+	    var zona2_desafio4 = document.createElement("img");
+	    var zona2_desafio5 = document.createElement("img");
+	    var zona2_desafio6 = document.createElement("img");
+	    var zona2_desafio7 = document.createElement("img");
+	    var zona2_desafio8 = document.createElement("img");
+	    var zona2_desafio9 = document.createElement("img");
+	    var zona2_desafio10 = document.createElement("img");
+	    var zona2_desafioEsp1 = document.createElement("img");
+	    var zona2_desafioEsp2 = document.createElement("img");
+	    var zona2_desafioEsp3 = document.createElement("img");
+	    var zona2_desafioEsp4 = document.createElement("img");
 		
-		premio1.setAttribute("id", "premio1");
-		premio2.setAttribute("id", "premio2");
-	    premio3.setAttribute("id", "premio3");
-		misterio1.setAttribute("id", "misterio1");
-		misterio2.setAttribute("id", "misterio2");
-	    misterio3.setAttribute("id", "misterio3");
-		conocimiento1.setAttribute("id", "conocimiento1");
-		conocimiento2.setAttribute("id", "conocimiento2");
-	    conocimiento3.setAttribute("id", "conocimiento3");
-	    conocimiento4.setAttribute("id", "conocimiento4");
-	    conocimiento5.setAttribute("id", "conocimiento5");
-	    fantasma1.setAttribute("id", "fantasma1");
-	    fantasma2.setAttribute("id", "fantasma2");
-	    fantasma3.setAttribute("id", "fantasma3");
-	    fantasma4.setAttribute("id", "fantasma4");
-	    fantasma5.setAttribute("id", "fantasma5");
-	    desafio1.setAttribute("id", "desafio1");
-	    desafio2.setAttribute("id", "desafio2");
-	    desafio3.setAttribute("id", "desafio3");
-	    desafio4.setAttribute("id", "desafio4");
-	    desafio5.setAttribute("id", "desafio5");
-	    desafio6.setAttribute("id", "desafio6");
-	    desafio7.setAttribute("id", "desafio7");
-	    desafio8.setAttribute("id", "desafio8");
-	    desafio9.setAttribute("id", "desafio9");
-	    desafio10.setAttribute("id", "desafio10");
-	    desafioEsp1.setAttribute("id", "desafioEsp1");
-	    desafioEsp2.setAttribute("id", "desafioEsp2");
-	    desafioEsp3.setAttribute("id", "desafioEsp3");
-	    desafioEsp4.setAttribute("id", "desafioEsp4");
+		var zona3_premio1 = document.createElement("img");
+		var zona3_premio2 = document.createElement("img");
+	    var zona3_premio3 = document.createElement("img");
+		var zona3_misterio1 = document.createElement("img");
+		var zona3_misterio2 = document.createElement("img");
+	    var zona3_misterio3 = document.createElement("img");
+		var zona3_conocimiento1 = document.createElement("img");
+		var zona3_conocimiento2 = document.createElement("img");
+	    var zona3_conocimiento3 = document.createElement("img");
+	    var zona3_conocimiento4 = document.createElement("img");
+	    var zona3_conocimiento5 = document.createElement("img");
+	    var zona3_desafio1 = document.createElement("img");
+	    var zona3_desafio2 = document.createElement("img");
+	    var zona3_desafio3 = document.createElement("img");
+	    var zona3_desafio4 = document.createElement("img");
+	    var zona3_desafio5 = document.createElement("img");
+	    var zona3_desafio6 = document.createElement("img");
+	    var zona3_desafio7 = document.createElement("img");
+	    var zona3_desafio8 = document.createElement("img");
+	    var zona3_desafio9 = document.createElement("img");
+	    var zona3_desafio10 = document.createElement("img");
+	    var zona3_desafioEsp1 = document.createElement("img");
+	    var zona3_desafioEsp2 = document.createElement("img");
+	    var zona3_desafioEsp3 = document.createElement("img");
+	    var zona3_desafioEsp4 = document.createElement("img");
 		
+		var zona4_premio1 = document.createElement("img");
+		var zona4_premio2 = document.createElement("img");
+	    var zona4_premio3 = document.createElement("img");
+		var zona4_misterio1 = document.createElement("img");
+		var zona4_misterio2 = document.createElement("img");
+	    var zona4_misterio3 = document.createElement("img");
+		var zona4_conocimiento1 = document.createElement("img");
+		var zona4_conocimiento2 = document.createElement("img");
+	    var zona4_conocimiento3 = document.createElement("img");
+	    var zona4_conocimiento4 = document.createElement("img");
+	    var zona4_conocimiento5 = document.createElement("img");
+	    var zona4_desafio1 = document.createElement("img");
+	    var zona4_desafio2 = document.createElement("img");
+	    var zona4_desafio3 = document.createElement("img");
+	    var zona4_desafio4 = document.createElement("img");
+	    var zona4_desafio5 = document.createElement("img");
+	    var zona4_desafio6 = document.createElement("img");
+	    var zona4_desafio7 = document.createElement("img");
+	    var zona4_desafio8 = document.createElement("img");
+	    var zona4_desafio9 = document.createElement("img");
+	    var zona4_desafio10 = document.createElement("img");
+	    var zona4_desafioEsp1 = document.createElement("img");
+	    var zona4_desafioEsp2 = document.createElement("img");
+	    var zona4_desafioEsp3 = document.createElement("img");
+	    var zona4_desafioEsp4 = document.createElement("img");
 		
-        $("#zonasur").append(premio1);
-        $("#zonasur").append(premio2);
-        $("#zonasur").append(premio3);
-        $("#zonasur").append(misterio1);
-        $("#zonasur").append(misterio2);
-        $("#zonasur").append(misterio3);
-        $("#zonasur").append(conocimiento1);
-        $("#zonasur").append(conocimiento2);
-        $("#zonasur").append(conocimiento3);
-        $("#zonasur").append(conocimiento4);
-        $("#zonasur").append(conocimiento5);
-        $("#zonasur").append(fantasma1);
-        $("#zonasur").append(fantasma2);
-        $("#zonasur").append(fantasma3);
-        $("#zonasur").append(fantasma4);
-        $("#zonasur").append(fantasma5);
-        $("#zonasur").append(desafio1);
-        $("#zonasur").append(desafio2);
-        $("#zonasur").append(desafio3);
-        $("#zonasur").append(desafio4);
-        $("#zonasur").append(desafio5);
-        $("#zonasur").append(desafio6);
-        $("#zonasur").append(desafio7)
-        $("#zonasur").append(desafio8);
-        $("#zonasur").append(desafio9);
-        $("#zonasur").append(desafio10);
-        $("#zonasur").append(desafioEsp1);
-        $("#zonasur").append(desafioEsp2);
-        $("#zonasur").append(desafioEsp3);
-        $("#zonasur").append(desafioEsp4);
+		zona1_premio1.setAttribute("src", "assets/img/premio.png");
+		zona1_premio2.setAttribute("src", "assets/img/premio-lock.png");
+	    zona1_premio3.setAttribute("src", "assets/img/premio-lock.png");
+		zona1_misterio1.setAttribute("src", "assets/img/pregunta.png");
+		zona1_misterio2.setAttribute("src", "assets/img/pregunta.png");
+	    zona1_misterio3.setAttribute("src", "assets/img/pregunta.png");
+		zona1_conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
+		zona1_conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
+	    zona1_conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
+	    zona1_conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
+	    zona1_conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
+	    zona1_desafio1.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio2.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio3.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio4.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio5.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio6.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio7.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio8.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio9.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafio10.setAttribute("src", "assets/img/otro.png");
+	    zona1_desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona1_desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona1_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona1_desafioEsp4.setAttribute("src", "assets/img/kimgen-lock.png");
+		
+		zona2_premio1.setAttribute("src", "assets/img/premio.png");
+		zona2_premio2.setAttribute("src", "assets/img/premio-lock.png");
+	    zona2_premio3.setAttribute("src", "assets/img/premio-lock.png");
+		zona2_misterio1.setAttribute("src", "assets/img/pregunta.png");
+		zona2_misterio2.setAttribute("src", "assets/img/pregunta.png");
+	    zona2_misterio3.setAttribute("src", "assets/img/pregunta.png");
+		zona2_conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
+		zona2_conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
+	    zona2_conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
+	    zona2_conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
+	    zona2_conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
+	    zona2_desafio1.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio2.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio3.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio4.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio5.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio6.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio7.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio8.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio9.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafio10.setAttribute("src", "assets/img/otro.png");
+	    zona2_desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona2_desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona2_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona2_desafioEsp4.setAttribute("src", "assets/img/kimgen-lock.png");
+		
+		zona3_premio1.setAttribute("src", "assets/img/premio.png");
+		zona3_premio2.setAttribute("src", "assets/img/premio-lock.png");
+	    zona3_premio3.setAttribute("src", "assets/img/premio-lock.png");
+		zona3_misterio1.setAttribute("src", "assets/img/pregunta.png");
+		zona3_misterio2.setAttribute("src", "assets/img/pregunta.png");
+	    zona3_misterio3.setAttribute("src", "assets/img/pregunta.png");
+		zona3_conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
+		zona3_conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
+	    zona3_conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
+	    zona3_conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
+	    zona3_conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
+	    zona3_desafio1.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio2.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio3.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio4.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio5.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio6.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio7.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio8.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio9.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafio10.setAttribute("src", "assets/img/otro.png");
+	    zona3_desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona3_desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona3_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona3_desafioEsp4.setAttribute("src", "assets/img/kimgen-lock.png");
+		
+		zona4_premio1.setAttribute("src", "assets/img/premio.png");
+		zona4_premio2.setAttribute("src", "assets/img/premio-lock.png");
+	    zona4_premio3.setAttribute("src", "assets/img/premio-lock.png");
+		zona4_misterio1.setAttribute("src", "assets/img/pregunta.png");
+		zona4_misterio2.setAttribute("src", "assets/img/pregunta.png");
+	    zona4_misterio3.setAttribute("src", "assets/img/pregunta.png");
+		zona4_conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
+		zona4_conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
+	    zona4_conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
+	    zona4_conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
+	    zona4_conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
+	    zona4_desafio1.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio2.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio3.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio4.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio5.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio6.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio7.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio8.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio9.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafio10.setAttribute("src", "assets/img/otro.png");
+	    zona4_desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona4_desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona4_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
+	    zona4_desafioEsp4.setAttribute("src", "assets/img/kimgen-lock.png");
+		
+		zona1_premio1.setAttribute("id", "zona1_premio1");
+		zona1_premio2.setAttribute("id", "zona1_premio2");
+	    zona1_premio3.setAttribute("id", "zona1_premio3");
+		zona1_misterio1.setAttribute("id", "zona1_misterio1");
+		zona1_misterio2.setAttribute("id", "zona1_misterio2");
+	    zona1_misterio3.setAttribute("id", "zona1_misterio3");
+		zona1_conocimiento1.setAttribute("id", "zona1_conocimiento1");
+		zona1_conocimiento2.setAttribute("id", "zona1_conocimiento2");
+	    zona1_conocimiento3.setAttribute("id", "zona1_conocimiento3");
+	    zona1_conocimiento4.setAttribute("id", "zona1_conocimiento4");
+	    zona1_conocimiento5.setAttribute("id", "zona1_conocimiento5");
+	    zona1_desafio1.setAttribute("id", "zona1_desafio1");
+	    zona1_desafio2.setAttribute("id", "zona1_desafio2");
+	    zona1_desafio3.setAttribute("id", "zona1_desafio3");
+	    zona1_desafio4.setAttribute("id", "zona1_desafio4");
+	    zona1_desafio5.setAttribute("id", "zona1_desafio5");
+	    zona1_desafio6.setAttribute("id", "zona1_desafio6");
+	    zona1_desafio7.setAttribute("id", "zona1_desafio7");
+	    zona1_desafio8.setAttribute("id", "zona1_desafio8");
+	    zona1_desafio9.setAttribute("id", "zona1_desafio9");
+	    zona1_desafio10.setAttribute("id", "zona1_desafio10");
+	    zona1_desafioEsp1.setAttribute("id", "zona1_desafioEsp1");
+	    zona1_desafioEsp2.setAttribute("id", "zona1_desafioEsp2");
+	    zona1_desafioEsp3.setAttribute("id", "zona1_desafioEsp3");
+	    zona1_desafioEsp4.setAttribute("id", "zona1_desafioEsp4");
+		
+		zona2_premio1.setAttribute("id", "zona2_premio1");
+		zona2_premio2.setAttribute("id", "zona2_premio2");
+	    zona2_premio3.setAttribute("id", "zona2_premio3");
+		zona2_misterio1.setAttribute("id", "zona2_misterio1");
+		zona2_misterio2.setAttribute("id", "zona2_misterio2");
+	    zona2_misterio3.setAttribute("id", "zona2_misterio3");
+		zona2_conocimiento1.setAttribute("id", "zona2_conocimiento1");
+		zona2_conocimiento2.setAttribute("id", "zona2_conocimiento2");
+	    zona2_conocimiento3.setAttribute("id", "zona2_conocimiento3");
+	    zona2_conocimiento4.setAttribute("id", "zona2_conocimiento4");
+	    zona2_conocimiento5.setAttribute("id", "zona2_conocimiento5");
+	    zona2_desafio1.setAttribute("id", "zona2_desafio1");
+	    zona2_desafio2.setAttribute("id", "zona2_desafio2");
+	    zona2_desafio3.setAttribute("id", "zona2_desafio3");
+	    zona2_desafio4.setAttribute("id", "zona2_desafio4");
+	    zona2_desafio5.setAttribute("id", "zona2_desafio5");
+	    zona2_desafio6.setAttribute("id", "zona2_desafio6");
+	    zona2_desafio7.setAttribute("id", "zona2_desafio7");
+	    zona2_desafio8.setAttribute("id", "zona2_desafio8");
+	    zona2_desafio9.setAttribute("id", "zona2_desafio9");
+	    zona2_desafio10.setAttribute("id", "zona2_desafio10");
+	    zona2_desafioEsp1.setAttribute("id", "zona2_desafioEsp1");
+	    zona2_desafioEsp2.setAttribute("id", "zona2_desafioEsp2");
+	    zona2_desafioEsp3.setAttribute("id", "zona2_desafioEsp3");
+	    zona2_desafioEsp4.setAttribute("id", "zona2_desafioEsp4");
+		
+		zona3_premio1.setAttribute("id", "zona3_premio1");
+		zona3_premio2.setAttribute("id", "zona3_premio2");
+	    zona3_premio3.setAttribute("id", "zona3_premio3");
+		zona3_misterio1.setAttribute("id", "zona3_misterio1");
+		zona3_misterio2.setAttribute("id", "zona3_misterio2");
+	    zona3_misterio3.setAttribute("id", "zona3_misterio3");
+		zona3_conocimiento1.setAttribute("id", "zona3_conocimiento1");
+		zona3_conocimiento2.setAttribute("id", "zona3_conocimiento2");
+	    zona3_conocimiento3.setAttribute("id", "zona3_conocimiento3");
+	    zona3_conocimiento4.setAttribute("id", "zona3_conocimiento4");
+	    zona3_conocimiento5.setAttribute("id", "zona3_conocimiento5");
+	    zona3_desafio1.setAttribute("id", "zona3_desafio1");
+	    zona3_desafio2.setAttribute("id", "zona3_desafio2");
+	    zona3_desafio3.setAttribute("id", "zona3_desafio3");
+	    zona3_desafio4.setAttribute("id", "zona3_desafio4");
+	    zona3_desafio5.setAttribute("id", "zona3_desafio5");
+	    zona3_desafio6.setAttribute("id", "zona3_desafio6");
+	    zona3_desafio7.setAttribute("id", "zona3_desafio7");
+	    zona3_desafio8.setAttribute("id", "zona3_desafio8");
+	    zona3_desafio9.setAttribute("id", "zona3_desafio9");
+	    zona3_desafio10.setAttribute("id", "zona3_desafio10");
+	    zona3_desafioEsp1.setAttribute("id", "zona3_desafioEsp1");
+	    zona3_desafioEsp2.setAttribute("id", "zona3_desafioEsp2");
+	    zona3_desafioEsp3.setAttribute("id", "zona3_desafioEsp3");
+	    zona3_desafioEsp4.setAttribute("id", "zona3_desafioEsp4");
+		
+		zona4_premio1.setAttribute("id", "zona4_premio1");
+		zona4_premio2.setAttribute("id", "zona4_premio2");
+	    zona4_premio3.setAttribute("id", "zona4_premio3");
+		zona4_misterio1.setAttribute("id", "zona4_misterio1");
+		zona4_misterio2.setAttribute("id", "zona4_misterio2");
+	    zona4_misterio3.setAttribute("id", "zona4_misterio3");
+		zona4_conocimiento1.setAttribute("id", "zona4_conocimiento1");
+		zona4_conocimiento2.setAttribute("id", "zona4_conocimiento2");
+	    zona4_conocimiento3.setAttribute("id", "zona4_conocimiento3");
+	    zona4_conocimiento4.setAttribute("id", "zona4_conocimiento4");
+	    zona4_conocimiento5.setAttribute("id", "zona4_conocimiento5");
+	    zona4_desafio1.setAttribute("id", "zona4_desafio1");
+	    zona4_desafio2.setAttribute("id", "zona4_desafio2");
+	    zona4_desafio3.setAttribute("id", "zona4_desafio3");
+	    zona4_desafio4.setAttribute("id", "zona4_desafio4");
+	    zona4_desafio5.setAttribute("id", "zona4_desafio5");
+	    zona4_desafio6.setAttribute("id", "zona4_desafio6");
+	    zona4_desafio7.setAttribute("id", "zona4_desafio7");
+	    zona4_desafio8.setAttribute("id", "zona4_desafio8");
+	    zona4_desafio9.setAttribute("id", "zona4_desafio9");
+	    zona4_desafio10.setAttribute("id", "zona4_desafio10");
+	    zona4_desafioEsp1.setAttribute("id", "zona4_desafioEsp1");
+	    zona4_desafioEsp2.setAttribute("id", "zona4_desafioEsp2");
+	    zona4_desafioEsp3.setAttribute("id", "zona4_desafioEsp3");
+	    zona4_desafioEsp4.setAttribute("id", "zona4_desafioEsp4");
+		
+		$("#zonanorte").append(zona1_premio1);
+        $("#zonanorte").append(zona1_premio2);
+        $("#zonanorte").append(zona1_premio3);
+        $("#zonanorte").append(zona1_misterio1);
+        $("#zonanorte").append(zona1_misterio2);
+        $("#zonanorte").append(zona1_misterio3);
+        $("#zonanorte").append(zona1_conocimiento1);
+        $("#zonanorte").append(zona1_conocimiento2);
+        $("#zonanorte").append(zona1_conocimiento3);
+        $("#zonanorte").append(zona1_conocimiento4);
+        $("#zonanorte").append(zona1_conocimiento5);
+        $("#zonanorte").append(zona1_desafio1);
+        $("#zonanorte").append(zona1_desafio2);
+        $("#zonanorte").append(zona1_desafio3);
+        $("#zonanorte").append(zona1_desafio4);
+        $("#zonanorte").append(zona1_desafio5);
+        $("#zonanorte").append(zona1_desafio6);
+        $("#zonanorte").append(zona1_desafio7)
+        $("#zonanorte").append(zona1_desafio8);
+        $("#zonanorte").append(zona1_desafio9);
+        $("#zonanorte").append(zona1_desafio10);
+        $("#zonanorte").append(zona1_desafioEsp1);
+        $("#zonanorte").append(zona1_desafioEsp2);
+        $("#zonanorte").append(zona1_desafioEsp3);
+        $("#zonanorte").append(zona1_desafioEsp4);
+		
+		$("#zonacentro").append(zona2_premio1);
+        $("#zonacentro").append(zona2_premio2);
+        $("#zonacentro").append(zona2_premio3);
+        $("#zonacentro").append(zona2_misterio1);
+        $("#zonacentro").append(zona2_misterio2);
+        $("#zonacentro").append(zona2_misterio3);
+        $("#zonacentro").append(zona2_conocimiento1);
+        $("#zonacentro").append(zona2_conocimiento2);
+        $("#zonacentro").append(zona2_conocimiento3);
+        $("#zonacentro").append(zona2_conocimiento4);
+        $("#zonacentro").append(zona2_conocimiento5);
+        $("#zonacentro").append(zona2_desafio1);
+        $("#zonacentro").append(zona2_desafio2);
+        $("#zonacentro").append(zona2_desafio3);
+        $("#zonacentro").append(zona2_desafio4);
+        $("#zonacentro").append(zona2_desafio5);
+        $("#zonacentro").append(zona2_desafio6);
+        $("#zonacentro").append(zona2_desafio7)
+        $("#zonacentro").append(zona2_desafio8);
+        $("#zonacentro").append(zona2_desafio9);
+        $("#zonacentro").append(zona2_desafio10);
+        $("#zonacentro").append(zona2_desafioEsp1);
+        $("#zonacentro").append(zona2_desafioEsp2);
+        $("#zonacentro").append(zona2_desafioEsp3);
+        $("#zonacentro").append(zona2_desafioEsp4);
+		
+        $("#zonasur").append(zona3_premio1);
+        $("#zonasur").append(zona3_premio2);
+        $("#zonasur").append(zona3_premio3);
+        $("#zonasur").append(zona3_misterio1);
+        $("#zonasur").append(zona3_misterio2);
+        $("#zonasur").append(zona3_misterio3);
+        $("#zonasur").append(zona3_conocimiento1);
+        $("#zonasur").append(zona3_conocimiento2);
+        $("#zonasur").append(zona3_conocimiento3);
+        $("#zonasur").append(zona3_conocimiento4);
+        $("#zonasur").append(zona3_conocimiento5);
+        $("#zonasur").append(zona3_desafio1);
+        $("#zonasur").append(zona3_desafio2);
+        $("#zonasur").append(zona3_desafio3);
+        $("#zonasur").append(zona3_desafio4);
+        $("#zonasur").append(zona3_desafio5);
+        $("#zonasur").append(zona3_desafio6);
+        $("#zonasur").append(zona3_desafio7)
+        $("#zonasur").append(zona3_desafio8);
+        $("#zonasur").append(zona3_desafio9);
+        $("#zonasur").append(zona3_desafio10);
+        $("#zonasur").append(zona3_desafioEsp1);
+        $("#zonasur").append(zona3_desafioEsp2);
+        $("#zonasur").append(zona3_desafioEsp3);
+        $("#zonasur").append(zona3_desafioEsp4);
+		
+		$("#zonaustral").append(zona4_premio1);
+        $("#zonaustral").append(zona4_premio2);
+        $("#zonaustral").append(zona4_premio3);
+        $("#zonaustral").append(zona4_misterio1);
+        $("#zonaustral").append(zona4_misterio2);
+        $("#zonaustral").append(zona4_misterio3);
+        $("#zonaustral").append(zona4_conocimiento1);
+        $("#zonaustral").append(zona4_conocimiento2);
+        $("#zonaustral").append(zona4_conocimiento3);
+        $("#zonaustral").append(zona4_conocimiento4);
+        $("#zonaustral").append(zona4_conocimiento5);
+        $("#zonaustral").append(zona4_desafio1);
+        $("#zonaustral").append(zona4_desafio2);
+        $("#zonaustral").append(zona4_desafio3);
+        $("#zonaustral").append(zona4_desafio4);
+        $("#zonaustral").append(zona4_desafio5);
+        $("#zonaustral").append(zona4_desafio6);
+        $("#zonaustral").append(zona4_desafio7)
+        $("#zonaustral").append(zona4_desafio8);
+        $("#zonaustral").append(zona4_desafio9);
+        $("#zonaustral").append(zona4_desafio10);
+        $("#zonaustral").append(zona4_desafioEsp1);
+        $("#zonaustral").append(zona4_desafioEsp2);
+        $("#zonaustral").append(zona4_desafioEsp3);
+        $("#zonaustral").append(zona4_desafioEsp4);
 
-		$( "body" ).on( "click", "#premio1", premio1_click )
-		$( "body" ).on( "click", "#premio2", premio2_click);
-	    $( "body" ).on( "click", "#premio3", premio3_click);
-		$( "body" ).on( "click", "#misterio1", misterio1_click);
-		$( "body" ).on( "click", "#misterio2", misterio2_click);
-	    $( "body" ).on( "click", "#misterio3", misterio3_click);
-		$( "body" ).on( "click", "#conocimiento1", conocimiento1_click);
-		$( "body" ).on( "click", "#conocimiento2", conocimiento2_click);
-	    $( "body" ).on( "click", "#conocimiento3", conocimiento3_click);
-	    $( "body" ).on( "click", "#conocimiento4", conocimiento4_click);
-	    $( "body" ).on( "click", "#conocimiento5", conocimiento4_click);
-	    $( "body" ).on( "click", "#fantasma1", fantasma1_click);
-	    $( "body" ).on( "click", "#fantasma2", fantasma2_click);
-	    $( "body" ).on( "click", "#fantasma3", fantasma3_click);
-	    $( "body" ).on( "click", "#fantasma4", fantasma4_click);
-	    $( "body" ).on( "click", "#fantasma5", fantasma4_click);
-	    $( "body" ).on( "click", "#desafio1", desafio1_click);
-	    $( "body" ).on( "click", "#desafio2", desafio2_click);
-	    $( "body" ).on( "click", "#desafio3", desafio3_click);
-	    $( "body" ).on( "click", "#desafio4", desafio4_click);
-	    $( "body" ).on( "click", "#desafio5", desafio5_click);
-	    $( "body" ).on( "click", "#desafio6", desafio6_click);
-	    $( "body" ).on( "click", "#desafio7", desafio7_click);
-	    $( "body" ).on( "click", "#desafio8", desafio8_click);
-	    $( "body" ).on( "click", "#desafio9", desafio9_click);
-	    $( "body" ).on( "click", "#desafio10", desafio10_click);
-	    $( "body" ).on( "click", "#desafioEsp1", desafioEsp1_click);
-	    $( "body" ).on( "click", "#desafioEsp2", desafioEsp2_click);
-	    $( "body" ).on( "click", "#desafioEsp3", desafioEsp3_click);
-	    $( "body" ).on( "click", "#desafioEsp4", desafioEsp4_click);
+		$( "body" ).on( "click", "#zona1_premio1", zona1_premio1_clic )
+		$( "body" ).on( "click", "#zona1_premio2", zona1_premio2_clic);
+	    $( "body" ).on( "click", "#zona1_premio3", zona1_premio3_clic);
+		$( "body" ).on( "click", "#zona1_misterio1", zona1_misterio1_clic);
+		$( "body" ).on( "click", "#zona1_misterio2", zona1_misterio2_clic);
+	    $( "body" ).on( "click", "#zona1_misterio3", zona1_misterio3_clic);
+		$( "body" ).on( "click", "#zona1_conocimiento1", zona1_conocimiento1_clic);
+		$( "body" ).on( "click", "#zona1_conocimiento2", zona1_conocimiento2_clic);
+	    $( "body" ).on( "click", "#zona1_conocimiento3", zona1_conocimiento3_clic);
+	    $( "body" ).on( "click", "#zona1_conocimiento4", zona1_conocimiento4_clic);
+	    $( "body" ).on( "click", "#zona1_conocimiento5", zona1_conocimiento5_clic);
+	    $( "body" ).on( "click", "#zona1_desafio1", zona1_desafio1_clic);
+	    $( "body" ).on( "click", "#zona1_desafio2", zona1_desafio2_clic);
+	    $( "body" ).on( "click", "#zona1_desafio3", zona1_desafio3_clic);
+	    $( "body" ).on( "click", "#zona1_desafio4", zona1_desafio4_clic);
+	    $( "body" ).on( "click", "#zona1_desafio5", zona1_desafio5_clic);
+	    $( "body" ).on( "click", "#zona1_desafio6", zona1_desafio6_clic);
+	    $( "body" ).on( "click", "#zona1_desafio7", zona1_desafio7_clic);
+	    $( "body" ).on( "click", "#zona1_desafio8", zona1_desafio8_clic);
+	    $( "body" ).on( "click", "#zona1_desafio9", zona1_desafio9_clic);
+	    $( "body" ).on( "click", "#zona1_desafio10", zona1_desafio10_clic);
+	    $( "body" ).on( "click", "#zona1_desafioEsp1", zona1_desafioEsp1_clic);
+	    $( "body" ).on( "click", "#zona1_desafioEsp2", zona1_desafioEsp2_clic);
+	    $( "body" ).on( "click", "#zona1_desafioEsp3", zona1_desafioEsp3_clic);
+	    $( "body" ).on( "click", "#zona1_desafioEsp4", zona1_desafioEsp4_clic);
 		
+		$( "body" ).on( "click", "#zona2_premio1", zona2_premio1_clic)
+		$( "body" ).on( "click", "#zona2_premio2", zona2_premio2_clic);
+	    $( "body" ).on( "click", "#zona2_premio3", zona2_premio3_clic);
+		$( "body" ).on( "click", "#zona2_misterio1", zona2_misterio1_clic);
+		$( "body" ).on( "click", "#zona2_misterio2", zona2_misterio2_clic);
+	    $( "body" ).on( "click", "#zona2_misterio3", zona2_misterio3_clic);
+		$( "body" ).on( "click", "#zona2_conocimiento1", zona2_conocimiento1_clic);
+		$( "body" ).on( "click", "#zona2_conocimiento2", zona2_conocimiento2_clic);
+	    $( "body" ).on( "click", "#zona2_conocimiento3", zona2_conocimiento3_clic);
+	    $( "body" ).on( "click", "#zona2_conocimiento4", zona2_conocimiento4_clic);
+	    $( "body" ).on( "click", "#zona2_conocimiento5", zona2_conocimiento5_clic);
+	    $( "body" ).on( "click", "#zona2_desafio1", zona2_desafio1_clic);
+	    $( "body" ).on( "click", "#zona2_desafio2", zona2_desafio2_clic);
+	    $( "body" ).on( "click", "#zona2_desafio3", zona2_desafio3_clic);
+	    $( "body" ).on( "click", "#zona2_desafio4", zona2_desafio4_clic);
+	    $( "body" ).on( "click", "#zona2_desafio5", zona2_desafio5_clic);
+	    $( "body" ).on( "click", "#zona2_desafio6", zona2_desafio6_clic);
+	    $( "body" ).on( "click", "#zona2_desafio7", zona2_desafio7_clic);
+	    $( "body" ).on( "click", "#zona2_desafio8", zona2_desafio8_clic);
+	    $( "body" ).on( "click", "#zona2_desafio9", zona2_desafio9_clic);
+	    $( "body" ).on( "click", "#zona2_desafio10", zona2_desafio10_clic);
+	    $( "body" ).on( "click", "#zona2_desafioEsp1", zona2_desafioEsp1_clic);
+	    $( "body" ).on( "click", "#zona2_desafioEsp2", zona2_desafioEsp2_clic);
+	    $( "body" ).on( "click", "#zona2_desafioEsp3", zona2_desafioEsp3_clic);
+	    $( "body" ).on( "click", "#zona2_desafioEsp4", zona2_desafioEsp4_clic);
+		
+		$( "body" ).on( "click", "#zona3_premio1", zona3_premio1_clic)
+		$( "body" ).on( "click", "#zona3_premio2", zona3_premio2_clic);
+	    $( "body" ).on( "click", "#zona3_premio3", zona3_premio3_clic);
+		$( "body" ).on( "click", "#zona3_misterio1", zona3_misterio1_clic);
+		$( "body" ).on( "click", "#zona3_misterio2", zona3_misterio2_clic);
+	    $( "body" ).on( "click", "#zona3_misterio3", zona3_misterio3_clic);
+		$( "body" ).on( "click", "#zona3_conocimiento1", zona3_conocimiento1_clic);
+		$( "body" ).on( "click", "#zona3_conocimiento2", zona3_conocimiento2_clic);
+	    $( "body" ).on( "click", "#zona3_conocimiento3", zona3_conocimiento3_clic);
+	    $( "body" ).on( "click", "#zona3_conocimiento4", zona3_conocimiento4_clic);
+	    $( "body" ).on( "click", "#zona3_conocimiento5", zona3_conocimiento5_clic);
+	    $( "body" ).on( "click", "#zona3_desafio1", zona3_desafio1_clic);
+	    $( "body" ).on( "click", "#zona3_desafio2", zona3_desafio2_clic);
+	    $( "body" ).on( "click", "#zona3_desafio3", zona3_desafio3_clic);
+	    $( "body" ).on( "click", "#zona3_desafio4", zona3_desafio4_clic);
+	    $( "body" ).on( "click", "#zona3_desafio5", zona3_desafio5_clic);
+	    $( "body" ).on( "click", "#zona3_desafio6", zona3_desafio6_clic);
+	    $( "body" ).on( "click", "#zona3_desafio7", zona3_desafio7_clic);
+	    $( "body" ).on( "click", "#zona3_desafio8", zona3_desafio8_clic);
+	    $( "body" ).on( "click", "#zona3_desafio9", zona3_desafio9_clic);
+	    $( "body" ).on( "click", "#zona3_desafio10", zona3_desafio10_clic);
+	    $( "body" ).on( "click", "#zona3_desafioEsp1", zona3_desafioEsp1_clic);
+	    $( "body" ).on( "click", "#zona3_desafioEsp2", zona3_desafioEsp2_clic);
+	    $( "body" ).on( "click", "#zona3_desafioEsp3", zona3_desafioEsp3_clic);
+	    $( "body" ).on( "click", "#zona3_desafioEsp4", zona3_desafioEsp4_clic);
+		
+		$( "body" ).on( "click", "#zona4_premio1", zona4_premio1_clic)
+		$( "body" ).on( "click", "#zona4_premio2", zona4_premio2_clic);
+	    $( "body" ).on( "click", "#zona4_premio3", zona4_premio3_clic);
+		$( "body" ).on( "click", "#zona4_misterio1", zona4_misterio1_clic);
+		$( "body" ).on( "click", "#zona4_misterio2", zona4_misterio2_clic);
+	    $( "body" ).on( "click", "#zona4_misterio3", zona4_misterio3_clic);
+		$( "body" ).on( "click", "#zona4_conocimiento1", zona4_conocimiento1_clic);
+		$( "body" ).on( "click", "#zona4_conocimiento2", zona4_conocimiento2_clic);
+	    $( "body" ).on( "click", "#zona4_conocimiento3", zona4_conocimiento3_clic);
+	    $( "body" ).on( "click", "#zona4_conocimiento4", zona4_conocimiento4_clic);
+	    $( "body" ).on( "click", "#zona4_conocimiento5", zona4_conocimiento5_clic);
+	    $( "body" ).on( "click", "#zona4_desafio1", zona4_desafio1_clic);
+	    $( "body" ).on( "click", "#zona4_desafio2", zona4_desafio2_clic);
+	    $( "body" ).on( "click", "#zona4_desafio3", zona4_desafio3_clic);
+	    $( "body" ).on( "click", "#zona4_desafio4", zona4_desafio4_clic);
+	    $( "body" ).on( "click", "#zona4_desafio5", zona4_desafio5_clic);
+	    $( "body" ).on( "click", "#zona4_desafio6", zona4_desafio6_clic);
+	    $( "body" ).on( "click", "#zona4_desafio7", zona4_desafio7_clic);
+	    $( "body" ).on( "click", "#zona4_desafio8", zona4_desafio8_clic);
+	    $( "body" ).on( "click", "#zona4_desafio9", zona4_desafio9_clic);
+	    $( "body" ).on( "click", "#zona4_desafio10", zona4_desafio10_clic);
+	    $( "body" ).on( "click", "#zona4_desafioEsp1", zona4_desafioEsp1_clic);
+	    $( "body" ).on( "click", "#zona4_desafioEsp2", zona4_desafioEsp2_clic);
+	    $( "body" ).on( "click", "#zona4_desafioEsp3", zona4_desafioEsp3_clic);
+	    $( "body" ).on( "click", "#zona4_desafioEsp4", zona4_desafioEsp4_clic);
       });
-
 	  
-
+	function zona1_premio1_clic(){
+	    return true;
+	}
+	function zona1_premio2_clic(){
+	    return true;
+	}
+	function zona1_premio3_clic(){
+	    return true;
+	}
+	function zona1_misterio1_clic(){
+	    return true;
+	}
+	function zona1_misterio2_clic(){
+	    return true;
+	}
+	function zona1_misterio3_clic(){
+	    return true;
+	}
+	function zona1_conocimiento1_clic(){
+	    return true;
+	}
+	function zona1_conocimiento2_clic(){
+	    return true;
+	}
+	function zona1_conocimiento3_clic(){
+	    return true;
+	}
+	function zona1_conocimiento4_clic(){
+	    return true;
+	}
+	function zona1_conocimiento5_clic(){
+	    return true;
+	}
+	function zona1_desafio1_clic(){
+	    return true;
+	}
+	function zona1_desafio2_clic(){
+	    return true;
+	}
+	function zona1_desafio3_clic(){
+	    return true;
+	}
+	function zona1_desafio4_clic(){
+	    return true;
+	}
+	function zona1_desafio5_clic(){
+	    return true;
+	}
+	function zona1_desafio6_clic(){
+	    return true;
+	}
+	function zona1_desafio7_clic(){
+	    return true;
+	}
+	function zona1_desafio8_clic(){
+	    return true;
+	}
+	function zona1_desafio9_clic(){
+	    return true;
+	}
+	function zona1_desafio10_clic(){
+	    return true;
+	}
+	function zona1_desafioEsp1_clic(){
+	    return true;
+	}
+	function zona1_desafioEsp2_clic(){
+	    return true;
+	}
+	function zona1_desafioEsp3_clic(){
+	    return true;
+	}
+	function zona1_desafioEsp4_clic(){
+	    return true;
+	}
 	  
-	 function premio1_click() {
-	 show_hide('popup-kimgen');
-	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/premio1.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 document.getElementById("premio1").setAttribute("src", "assets/img/premio-no.png");
-	 $( "body" ).off( "click", "#premio1", premio1_click )
-	 document.getElementById("premio1").addEventListener("click", desafioEsp4_click);
-	 
-	 }
-	 function premio2_click() {
-	 	    alert("Esta Bloqueada!");
-	 }
-	 function premio3_click() {
-	 	    alert("Esta Bloqueada!");
-	 }
-	 function misterio1_click() {
-	 }
-	 function misterio2_click() {
-	 }
-	 function misterio3_click() {
-	 }
-	 function conocimiento1_click() {
-	 show_hide('popup-kimgen');
-	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/sabiasq1.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 document.getElementById("conocimiento1").setAttribute("src", "assets/img/sabiasq-lock.png");
-	 $( "body" ).off( "click", "#conocimiento1", conocimiento1_click )
-	 document.getElementById("conocimiento1").addEventListener("click", desafioEsp4_click);
-	 }
-	 function conocimiento2_click() {
-	 	 show_hide('popup-kimgen');
-		 	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/sabiasq2.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 document.getElementById("conocimiento2").setAttribute("src", "assets/img/sabiasq-lock.png");
-	 $( "body" ).off( "click", "#conocimiento2", conocimiento2_click )
-	 document.getElementById("conocimiento2").addEventListener("click", desafioEsp4_click);
-	 }
- 	 function conocimiento3_click() {
-	 	 show_hide('popup-kimgen');
-		 	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/sabiasq3.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 document.getElementById("conocimiento3").setAttribute("src", "assets/img/sabiasq-lock.png");
-	 $( "body" ).off( "click", "#conocimiento3", conocimiento3_click )
-	 document.getElementById("conocimiento3").addEventListener("click", desafioEsp4_click);
-	 }
- 	 function conocimiento4_click() {
-	 	 show_hide('popup-kimgen');
-		 	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/sabiasq4.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 document.getElementById("conocimiento4").setAttribute("src", "assets/img/sabiasq-lock.png");
-	 $( "body" ).off( "click", "#conocimiento4", conocimiento4_click )
-	 document.getElementById("conocimiento4").addEventListener("click", desafioEsp4_click);
-	 }
- 	 function conocimiento5_click() {
-	 show_hide('popup-kimgen');
-	 	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/sabiasq5.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 document.getElementById("conocimiento5").setAttribute("src", "assets/img/sabiasq-lock.png");
-	 $( "body" ).off( "click", "#conocimiento5", conocimiento5_click )
-	 document.getElementById("conocimiento5").addEventListener("click", desafioEsp4_click);
-	 }
-	 function fantasma1_click() {
-	 }
-	 function fantasma2_click() {
-	 alert("Esta Bloqueada!");
-	 }
-	 function fantasma3_click() {
-	 alert("Esta Bloqueada!");
-	 }
-	 function fantasma4_click() {
-	 alert("Esta Bloqueada!");
-	 }
-	 function fantasma5_click() {
-	 alert("Esta Bloqueada!");
-	 }
-	 function desafio1_click() {
-	 	 show_hide('popup-kimgen');
-	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/pregunta1.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 
-	 var desafio1_resp1 = $("<button type='button' id='pregunta1_resp1' class='btn btn-primary boton-respuesta1'>Grandes flujos de agua que <br>bajan por una quebrada o<br>cauce de agua, que<br>contienen rocas, tierra,<br>hojas y otros elementos.</button>");
-	 var desafio1_resp2 = $("<button type='button' id='pregunta1_resp2' class='btn btn-primary boton-respuesta2'>Ascenso explosivo del magma<br>de la tierra en<br>forma de lava y ceniza</button>");
-	 var desafio1_resp3 = $("<button type='button' id='pregunta1_resp3' class='btn btn-primary boton-respuesta3'>Aumento importante del curso<br>de agua en una<br>quebrada o lecho de río.</button>");
-	 
-	 $("#popup-kimgen").append(desafio1_resp1);
-	 $("#popup-kimgen").append(desafio1_resp2);
-	 $("#popup-kimgen").append(desafio1_resp3);
-
-	 
-	 $( "body" ).on( "click", "#pregunta1_resp1", pregunta1_resp1_click );
-	 $( "body" ).on( "click", "#pregunta1_resp2", pregunta1_resp2_click );
-	 $( "body" ).on( "click", "#pregunta1_resp3", pregunta1_resp3_click );
-	 
-	 }
-	 function desafio2_click() {
-	 	 show_hide('popup-kimgen');
-	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/pregunta2.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 }
-	 function desafio3_click() {
-	 	 show_hide('popup-kimgen');
-	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/pregunta3.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 }
-	 function desafio4_click() {
-	 	 show_hide('popup-kimgen');
-	 document.getElementById("popup-kimgen").innerHTML = "";
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
-	 imagen2.setAttribute("id", "cerrar-popup-kimgen");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 var imagen1 = document.createElement("img");
-	 imagen1.setAttribute("src", "assets/img/pregunta4.png");
-	 imagen1.setAttribute("id", "imagen1");
-	 $("#popup-kimgen").append(imagen1);
-	 }
-	 function desafio5_click() {
-	 }
-	 function desafio6_click() {
-	 }
-	 function desafio7_click() {
-	 }
-	 function desafio8_click() {
-	 }
-	 function desafio9_click() {
-	 }
-	 function desafio10_click() {
-	 }
-	 function desafioEsp1_click() {
-	    alert("Esta Bloqueada!");
-	 }
-	 function desafioEsp2_click() {
-	    alert("Esta Bloqueada!");
-	 }
-	 function desafioEsp3_click() {
-	    alert("Esta Bloqueada!");
-	 }
-	 function desafioEsp4_click() {
-	    alert("Esta Bloqueada!");
-	 }	
-	 
-	 function pregunta1_resp1_click() {
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/bien.png");
-	 imagen2.setAttribute("id", "bien");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 }
-	 function pregunta1_resp2_click() {
-	    alert("respuesta incorrecta");
-	 }	
-	 function pregunta1_resp3_click() {
-	    alert("respuesta incorrecta");
-	 }	
-	 
-	 function pregunta2_resp1_click() {
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/bien.png");
-	 imagen2.setAttribute("id", "bien");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 }
-	 function pregunta2_resp2_click() {
-	    alert("respuesta incorrecta");
-	 }	
-	 function pregunta2_resp3_click() {
-	    alert("respuesta incorrecta");
-	 }	
-	 
-	 	 function pregunta1_resp1_click() {
-	 var imagen2 = document.createElement("img");
-	 imagen2.setAttribute("src", "assets/img/bien.png");
-	 imagen2.setAttribute("id", "bien");
-	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
-	 $("#popup-kimgen").append(imagen2);
-	 $( "body" ).off( "click", "#desafio1", desafio1_click )
-	 document.getElementById("desafio1").addEventListener("click", desafioEsp4_click);
-	 }
-	 function pregunta1_resp2_click() {
-	    alert("respuesta incorrecta");
-	 }	
-	 function pregunta1_resp3_click() {
-	    alert("respuesta incorrecta");
-	 }	
-	 function cerrar_popup_kimgen_click() {
-	    show_hide('popup-kimgen');
-	 }		 
-	 
-	 function show_hide(id){
-  if (document.getElementById){
-  var el = document.getElementById(id);
-  el.style.display = (el.style.display == 'none') ? 'block' : 'none';
-}
-}
+	function zona2_premio1_clic(){
+	    return true;
+	}
+	function zona2_premio2_clic(){
+	    return true;
+	}
+	function zona2_premio3_clic(){
+	    return true;
+	}
+	function zona2_misterio1_clic(){
+	    return true;
+	}
+	function zona2_misterio2_clic(){
+	    return true;
+	}
+	function zona2_misterio3_clic(){
+	    return true;
+	}
+	function zona2_conocimiento1_clic(){
+	    return true;
+	}
+	function zona2_conocimiento2_clic(){
+	    return true;
+	}
+	function zona2_conocimiento3_clic(){
+	    return true;
+	}
+	function zona2_conocimiento4_clic(){
+	    return true;
+	}
+	function zona2_conocimiento5_clic(){
+	    return true;
+	}
+	function zona2_desafio1_clic(){
+	    return true;
+	}
+	function zona2_desafio2_clic(){
+	    return true;
+	}
+	function zona2_desafio3_clic(){
+	    return true;
+	}
+	function zona2_desafio4_clic(){
+	    return true;
+	}
+	function zona2_desafio5_clic(){
+	    return true;
+	}
+	function zona2_desafio6_clic(){
+	    return true;
+	}
+	function zona2_desafio7_clic(){
+	    return true;
+	}
+	function zona2_desafio8_clic(){
+	    return true;
+	}
+	function zona2_desafio9_clic(){
+	    return true;
+	}
+	function zona2_desafio10_clic(){
+	    return true;
+	}
+	function zona2_desafioEsp1_clic(){
+	    return true;
+	}
+	function zona2_desafioEsp2_clic(){
+	    return true;
+	}
+	function zona2_desafioEsp3_clic(){
+	    return true;
+	}
+	function zona2_desafioEsp4_clic(){
+	    return true;
+	}
+		
+	function zona3_premio1_clic(){
+	    return true;
+	}
+	function zona3_premio2_clic(){
+	    return true;
+	}
+	function zona3_premio3_clic(){
+	    return true;
+	}
+	function zona3_misterio1_clic(){
+	    return true;
+	}
+	function zona3_misterio2_clic(){
+	    return true;
+	}
+	function zona3_misterio3_clic(){
+	    return true;
+	}
+	function zona3_conocimiento1_clic(){
+	    return true;
+	}
+	function zona3_conocimiento2_clic(){
+	    return true;
+	}
+	function zona3_conocimiento3_clic(){
+	    return true;
+	}
+	function zona3_conocimiento4_clic(){
+	    return true;
+	}
+	function zona3_conocimiento5_clic(){
+	    return true;
+	}
+	function zona3_desafio1_clic(){
+	    return true;
+	}
+	function zona3_desafio2_clic(){
+	    return true;
+	}
+	function zona3_desafio3_clic(){
+	    return true;
+	}
+	function zona3_desafio4_clic(){
+	    return true;
+	}
+	function zona3_desafio5_clic(){
+	    return true;
+	}
+	function zona3_desafio6_clic(){
+	    return true;
+	}
+	function zona3_desafio7_clic(){
+	    return true;
+	}
+	function zona3_desafio8_clic(){
+	    return true;
+	}
+	function zona3_desafio9_clic(){
+	    return true;
+	}
+	function zona3_desafio10_clic(){
+	    return true;
+	}
+	function zona3_desafioEsp1_clic(){
+	    return true;
+	}
+	function zona3_desafioEsp2_clic(){
+	    return true;
+	}
+	function zona3_desafioEsp3_clic(){
+	    return true;
+	}
+	function zona3_desafioEsp4_clic(){
+	    return true;
+	}
+		
+	function zona4_premio1_clic(){
+	    return true;
+	}
+	function zona4_premio2_clic(){
+	    return true;
+	}
+	function zona4_premio3_clic(){
+	    return true;
+	}
+	function zona4_misterio1_clic(){
+	    return true;
+	}
+	function zona4_misterio2_clic(){
+	    return true;
+	}
+	function zona4_misterio3_clic(){
+	    return true;
+	}
+	function zona4_conocimiento1_clic(){
+	    return true;
+	}
+	function zona4_conocimiento2_clic(){
+	    return true;
+	}
+	function zona4_conocimiento3_clic(){
+	    return true;
+	}
+	function zona4_conocimiento4_clic(){
+	    return true;
+	}
+	function zona4_conocimiento5_clic(){
+	    return true;
+	}
+	function zona4_desafio1_clic(){
+	    return true;
+	}
+	function zona4_desafio2_clic(){
+	    return true;
+	}
+	function zona4_desafio3_clic(){
+	    return true;
+	}
+	function zona4_desafio4_clic(){
+	    return true;
+	}
+	function zona4_desafio5_clic(){
+	    return true;
+	}
+	function zona4_desafio6_clic(){
+	    return true;
+	}
+	function zona4_desafio7_clic(){
+	    return true;
+	}
+	function zona4_desafio8_clic(){
+	    return true;
+	}
+	function zona4_desafio9_clic(){
+	    return true;
+	}
+	function zona4_desafio10_clic(){
+	    return true;
+	}
+	function zona4_desafioEsp1_clic(){
+	    return true;
+	}
+	function zona4_desafioEsp2_clic(){
+	    return true;
+	}
+	function zona4_desafioEsp3_clic(){
+	    return true;
+	}
+	function zona4_desafioEsp4_clic(){
+	    return true;
+	}
       </script>
   </body>
 </html>
