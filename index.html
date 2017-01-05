@@ -107,7 +107,7 @@
       </a>
     </div><!-- /.carousel -->
     
-<div class="modal fade" tabindex="-1" role="login">
+<div class="modal fade" tabindex="-1" role="dialog" id="login">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -127,13 +127,27 @@
 </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default">Iniciar sesion</button>
+        <button type="button" class="btn btn-default" id="iniciar-sesion">Iniciar sesion</button>
         <button type="button" class="btn btn-primary">Registrarse</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+    <div class="modal fade" tabindex="-1" role="dialog" id="partidas">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Seleccione una opción</h4>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Recuperar partida</button>
+        <button type="button" class="btn btn-primary">Nueva Partida</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -143,6 +157,10 @@
       window.onload = function () {
        $('#login').modal('show');
 }
+      document.getElementById("iniciar-sesion").addEventListener("click", function(){
+        $('#login').modal('hide');
+        $('#partidas').modal('show');
+      });
       </script>
   </body>
 </html>
