@@ -435,3 +435,36 @@ width: 5% !important;
 	display: inline-block;
 	cursor:pointer;
 }
+.boton-respuesta1{
+	position: absolute;
+	top: 50%;
+	right:620px;
+	z-index: 10;
+	display: inline-block;
+	cursor:pointer;
+}
+.boton-respuesta2{
+	position: absolute;
+	top: 50%;
+	right:200px;
+	z-index: 10;
+	display: inline-block;
+	cursor:pointer;
+}
+.boton-respuesta3{
+	position: absolute;
+	top: 80%;
+	right:620px;
+	z-index: 10;
+	display: inline-block;
+	cursor:pointer;
+}
+
+#bien{
+	position: absolute;
+	top: 40%;
+	left:0;
+	z-index: 10;
+	display: inline-block;
+	cursor:pointer;
+}
