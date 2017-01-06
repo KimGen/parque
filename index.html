@@ -1454,7 +1454,40 @@
 		  $('#generico-lock').modal("show");
 		 }
 		 else{
-		 alert("source of image with alternate text = example - " + src);
+
+		 
+		 		 
+		 
+		 	show_hide('popup-kimgen');
+			document.getElementById("popup-kimgen").innerHTML = "";
+			var imagen2 = document.createElement("img");
+			imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
+			imagen2.setAttribute("id", "cerrar-popup-kimgen");
+			imagen2.addEventListener("click", cerrar_popup_kimgen_click);
+			$("#popup-kimgen").append(imagen2);
+	 
+			var imagen1 = document.createElement("img");
+			imagen1.setAttribute("src", "assets/img/pregunta2.png");
+			imagen1.setAttribute("id", "imagen1");
+			$("#popup-kimgen").append(imagen1);
+	 
+	        var desafio2_resp1 = $("<button type='button' style='position:absolute;top:55%;left:35%;z-index:10;display:inline-block;cursor:pointer;' id='pregunta2_resp1' class='btn btn-primary'>Zona sur-austral.</button>");
+	        var desafio2_resp2 = $("<button type='button' style='position:absolute;top:55%;left:65%;z-index:10;display:inline-block;cursor:pointer;' id='pregunta2_resp2' class='btn btn-primary'>Zona sur.</button>");
+	        var desafio2_resp3 = $("<button type='button' style='position:absolute;top:80%;left:35%;z-index:10;display:inline-block;cursor:pointer;' id='pregunta2_resp3' class='btn btn-primary'>Zona Norte y centro.</button>");
+	 
+	        $("#popup-kimgen").append(desafio2_resp1);
+	        $("#popup-kimgen").append(desafio2_resp2);
+	        $("#popup-kimgen").append(desafio2_resp3);
+	 
+	        $( "body" ).on( "click", "#pregunta2_resp1", pregunta2_resp1_click );
+	        $( "body" ).on( "click", "#pregunta2_resp2", pregunta2_resp2_click );
+	        $( "body" ).on( "click", "#pregunta2_resp3", pregunta2_resp3_click );
+		 
+
+		 
+		 
+		 
+		 
 		 }
 	}
 	function zona3_desafio3_clic(){
@@ -1724,6 +1757,28 @@
 	 function pregunta1_resp3_click() {
 	    alert("respuesta incorrecta");
 	 }	
+	 
+	 function pregunta2_resp1_click() {
+	    alert("respuesta incorrecta");
+	 }
+	 function pregunta2_resp2_click() {
+	    alert("respuesta incorrecta");
+	 }	
+	 function pregunta2_resp3_click() {
+	 var imagen2 = document.createElement("img");
+	 imagen2.setAttribute("src", "assets/img/bien.png");
+	 imagen2.setAttribute("id", "bien");
+	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
+	 $("#popup-kimgen").append(imagen2);
+	 
+	 document.getElementById("zona3_desafio2").setAttribute("src", "assets/img/otro-lock.png");
+	 $( "body" ).off( "click", "#zona3_desafio2", zona3_desafio2_clic )
+	 document.getElementById("zona3_desafio2").addEventListener("click", zona3_premio3_clic);
+	 incrementar_general();
+	 incrementar_conocimiento();
+	 incrementar_conocimiento();
+	 incrementar_conocimiento(); 
+	 }
 	 
       </script>
   </body>
