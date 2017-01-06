@@ -156,7 +156,7 @@
 		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
 		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
 		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
-		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left" id="caja-para-casco"></div>
 		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
 		 </div>
 		</div>
@@ -1308,10 +1308,12 @@
 	        imagen1.setAttribute("id", "imagen1");
 	        $("#popup-kimgen").append(imagen1);
 	        document.getElementById("zona3_premio1").setAttribute("src", "assets/img/premio-no.png");
-	        $( "body" ).off( "click", "#zona3_premio1", zona3_premio1_click )
+	        $( "body" ).off( "click", "#zona3_premio1", zona3_premio1_clic )
 	        document.getElementById("zona3_premio1").addEventListener("click", zona3_premio3_clic);
 			
-			
+			var boton_recolectar = $("<button type='button' id='boton-recolectar' style='position:absolute;top:40%;left:40%;z-index:10;display:inline-block;cursor:pointer;' class='btn btn-primary'>Guardar</button>");
+	        $("#popup-kimgen").append(boton_recolectar);
+	        $( "body" ).on( "click", "#boton-recolectar", recolectar1_clic );
 			
 			
 			
@@ -1515,6 +1517,14 @@
 	}
 		 function cerrar_popup_kimgen_click() {
 	    show_hide('popup-kimgen');
+	 }
+	 
+	 function recolectar1_clic(){
+	    show_hide('popup-kimgen');
+		  var imagen2 = document.createElement("img");
+	      imagen2.setAttribute("src", "assets/img/casco-pequeno.png");
+	      $("#caja-para-casco").append(imagen2);
+		
 	 }
       </script>
   </body>
