@@ -24,7 +24,7 @@ body {
   margin-left: 10px;
 }
 .btn-guardar:hover {
-  background-color: rgb(79,140,13);
+  background-color: rgb(79,140,13) !important;
 }
 .btn-amarillo:hover {
   color: #FFF;
@@ -77,6 +77,12 @@ body {
  background-color:rgb(248,201,9);
 }
 
+.brillo-progreso{
+	margin-left: 1px;
+    vertical-align: sub;
+    opacity: 0.7;
+}
+
 .line-progress{
  height: 25px;
  border-style: solid;
@@ -121,6 +127,35 @@ body {
   left: 0;
   min-width: 100%;
   height: 768px;
+}
+
+.flecha-izquierda{
+  position: absolute;
+  top: 50%;
+  left:0;
+  z-index: 5;
+  display: inline-block;
+  background-image: url("assets/img/izquierda.png");
+  background-repeat: no-repeat;
+  width:53px;
+  height:53px;
+}
+.flecha-izquierda:hover{
+  background-image: url("assets/img/izquierda-hover.png");
+}
+.flecha-derecha{
+  position: absolute;
+  top: 50%;
+  right:0;
+  z-index: 5;
+  display: inline-block;
+  background-image: url("assets/img/derecha.png");
+  background-repeat: no-repeat;
+  width:53px;
+  height:53px;
+}
+.flecha-derecha:hover{
+  background-image: url("assets/img/derecha-hover.png");
 }
 
 
@@ -174,124 +209,161 @@ body {
 }
 
 .ubic1 {
-	top: 25%;
+	top: 15%;
 	left:13%;
 }
 .ubic2 {
-	top: 25%;
+	top: 15%;
 	left:25%;
 }
 .ubic3 {
-	top: 25%;
+	top: 15%;
 	left:37%;
 }
 .ubic4 {
-	top: 25%;
+	top: 15%;
 	left:49%;
 }
 .ubic5 {
-	top: 25%;
+	top: 15%;
 	left:61%;
 }
 .ubic6 {
-	top: 25%;
+	top: 15%;
 	left:73%;
 }
 .ubic7 {
-	top: 42%;
-	left:12%;
+	top: 15%;
+	left:84%;
 }
 .ubic8 {
-	top: 42%;
-	left:12%;
+	top: 32%;
+	left:18%;
 }
 .ubic9 {
-	top: 42%;
-	left:12%;
+	top: 32%;
+	left:27%;
 }
 .ubic10 {
-	top: 42%;
-	left:12%;
+	top: 32%;
+	left:39%;
 }
 .ubic11 {
-	top: 42%;
-	left:12%;
+	top: 32%;
+	left:47%;
 }
 .ubic12 {
-	top: 42%;
-	left:12%;
+	top: 32%;
+	left:63%;
 }
 .ubic13 {
-	top: 65%;
-	left:12%;
+	top: 32%;
+	left:80%;
 }
 .ubic14 {
-	top: 65%;
-	left:12%;
+	top: 32%;
+	left:90%;
 }
 .ubic15 {
-	top: 65%;
-	left:12%;
+	top: 46%;
+	left:10%;
 }
 .ubic16 {
-	top: 65%;
-	left:12%;
+	top: 49%;
+	left:22%;
 }
 .ubic17 {
-	top: 65%;
-	left:12%;
+	top: 49%;
+	left:30%;
 }
 .ubic18 {
-	top: 65%;
-	left:12%;
+	top: 49%;
+	left:42%;
 }
 .ubic19 {
-	top: 80%;
-	left:12%;
+	top: 49%;
+	left:56%;
 }
 .ubic20 {
-	top: 80%;
-	left:12%;
+	top: 49%;
+	left:70%;
 }
 .ubic21 {
-	top: 80%;
-	left:12%;
+	top: 49%;
+	left:84%;
 }
 .ubic22 {
-	top: 80%;
-	left:12%;
+	top: 70%;
+	left:49%;
 }
 .ubic23 {
-	top: 80%;
-	left:12%;
+	top: 70%;
+	left:61%;
 }
 .ubic24 {
-	top: 80%;
-	left:12%;
+	top: 70%;
+	left:73%;
 }
 .ubic25 {
-	top: 80%;
-	left:12%;
+	top: 70%;
+	left:84%;
 }
 .ubic26 {
-	top: 25%;
-	left:12%;
+	top: 80%;
+	left:78%;
 }
 .ubic27 {
 	top: 25%;
 	left:12%;
 }
 .ubic28 {
-	top: 25%;
-	left:12%;
+	top: 70%;
+	left:31%;
 }
 .ubic29 {
-	top: 25%;
-	left:12%;
+	top: 65%;
+	left:20%;
 }
 .ubic30 {
-	top: 25%;
-	left:12%;
+	top: 38%;
+	left:70%;
+}
+
+.ubic31 {
+	top: 38%;
+	left:55%;
+}
+.ubic32 {
+	top: 64%;
+	left:45%;
+}
+.ubic33 {
+	top: 34%;
+	left:8%;
+}
+.ubic34 {
+	top: 77%;
+	left:37%;
+}
+.ubic35 {
+	top: 59%;
+	left:63%;
+}
+.ubic36 {
+	top: 44%;
+	left:48%;
+}
+.ubic37 {
+	top: 59%;
+	left:78%;
+}
+.ubic38 {
+	top: 61%;
+	left:14%;
+}
+.ubic39 {
+	top: 72%;
+	left:7%;
 }
 
 .carousel-control {

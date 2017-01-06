@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CL">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,7 +21,7 @@
               <button type="button" class="btn btn-amarillo navbar-btn" id="ir-home"><span class="glyphicon glyphicon-home"></span></button>
               <button type="button" class="btn btn-amarillo navbar-btn" id="ir-domo"><span class="glyphicon glyphicon-arrow-left"></span></button>
               <button type="button" class="btn btn-amarillo btn-guardar navbar-btn" data-toggle="modal" data-target="#partida-guardada"><span class="glyphicon glyphicon-floppy-disk"></span></button>
-              <button type="button" class="btn btn-verde navbar-btn navbar-right"><span class="glyphicon glyphicon-remove"></span></button>
+              <button type="button" class="btn btn-verde navbar-btn navbar-right hidden" data-toggle="modal" data-target="#cerrar-partida" id="boton-cerrar-partida"><span class="glyphicon glyphicon-remove"></span></button>
               <button type="button" class="btn btn-verde navbar-btn btn-dropdown navbar-right" id="mostrar-tarjeta"><span class="glyphicon glyphicon-arrow-down"></span></button>
               <div class="dropdown-menu" id="contenedorTarjeta">
 
@@ -44,26 +44,26 @@
               </div>
               <p class="navbar-text navbar-right" id="login-name"></p>
               <div class="progress navbar-right" id="amarilloProgress">
-                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                    <span class="sr-only">60% Complete</span>
+                 <div class="progress-bar" role="progressbar" id="progreso-comunicacion">
+				    <img  class="brillo-progreso" src="assets/img/brillo-progreso.png" alt="brillo barra de progreso">
                  </div>
                 <span class="line-progress"></span>
               </div>
               <div class="progress navbar-right" id="rojoProgress">
-                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                    <span class="sr-only">60% Complete</span>
+                 <div class="progress-bar" role="progressbar" id="progreso-prevencion">
+				 	<img  class="brillo-progreso" src="assets/img/brillo-progreso.png" alt="brillo barra de progreso">
                  </div>
                  <span class="line-progress"></span>
               </div>
               <div class="progress navbar-right" id="azulProgress">
-                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
-                    <span class="sr-only">60% Complete</span>
+                 <div class="progress-bar" role="progressbar" id="progreso-conocimiento">
+				 	<img  class="brillo-progreso" src="assets/img/brillo-progreso.png" alt="brillo barra de progreso">
                  </div>
                  <span class="line-progress"></span>
               </div>
               <div class="progress navbar-right" id="generalProgress">
-                 <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
-                    <span class="sr-only">60% Complete</span>
+                 <div class="progress-bar" role="progressbar" id="progreso-general">
+				 	<img  class="brillo-progreso" src="assets/img/brillo-progreso.png" alt="brillo barra de progreso">
                  </div>
                  <span class="line-progress"></span>
               </div>
@@ -86,12 +86,12 @@
           <div class="container" id="zonacentro">
           </div>
         </div>
-        <div class="item active">
+        <div class="item">
           <img class="third-slide" src="assets/img/zonasur.jpg" alt="Zona Sur de Chile">
           <div class="container" id="zonasur">
           </div>
         </div>
-        <div class="item">
+        <div class="item active">
           <img class="third-slide" src="assets/img/zonaustral.jpg" alt="Zona Austral de Chile">
           <div class="container" id="zonaustral">
           </div>
@@ -99,17 +99,15 @@
 	    <img src="assets/img/barra-comunicador.png" style="position: absolute;top: 70%;right:0;z-index: 5;display: inline-block;" id="barra-comunicador">
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-	    <img src="assets/img/izquierda.png" style="position: absolute;top: 50%;left:0;z-index: 5;display: inline-block;">
-        <span class="sr-only">Previous</span>
+	    <span class="flecha-izquierda"></span>
       </a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-	  	<img src="assets/img/derecha.png" style="position: absolute;top: 50%;right:0;z-index: 5;display: inline-block;">
-        <span class="sr-only">Next</span>
+	    <span class="flecha-derecha"></span>
       </a>
     </div><!-- /.carousel -->
     <div class="popup-kimgen" style="display:none;" id="popup-kimgen">
 	</div>
-<div class="modal fade" tabindex="-1" role="dialog" id="login">
+<div class="modal" tabindex="-1" role="dialog" id="login">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -136,11 +134,10 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-    <div class="modal fade" tabindex="-1" role="dialog" id="partidas">
+    <div class="modal" tabindex="-1" role="dialog" id="partidas">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">Seleccione una opción</h4>
       </div>
       <div class="modal-footer">
@@ -151,7 +148,7 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<div class="modal fade" tabindex="-1" role="dialog" id="partida-guardada">
+<div class="modal" tabindex="-1" role="dialog" id="partida-guardada">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -165,7 +162,7 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<div class="modal fade" tabindex="-1" role="dialog" id="no-conectado">
+<div class="modal" tabindex="-1" role="dialog" id="no-conectado">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -173,11 +170,82 @@
         <h4 class="modal-title">Conexión no creada</h4>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">De acuerdo</button>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
+
+<div class="modal" tabindex="-1" role="dialog" id="zonanorte-lock">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title">Macrozona Bloqueada</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Debes completar el 50% de la Macrozona Centro</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">De acuerdo</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	
+<div class="modal" tabindex="-1" role="dialog" id="zonacentro-lock">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title">Macrozona Bloqueada</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Debes completar el 70% de la Macrozona Sur</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">De acuerdo</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	
+<div class="modal" tabindex="-1" role="dialog" id="zonaustral-lock">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title">Macrozona Bloqueada</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Debes completar el 70% de la Macrozona Sur</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div class="modal" tabindex="-1" role="dialog" id="cerrar-partida">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title">Salir</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>¿Está seguro que desea cerrar la partida?</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal" id="cerrar-partida-actual">Si</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -192,7 +260,10 @@
       document.getElementById("iniciar-sesion").addEventListener("click", function(){
         $('#login').modal('hide');
         document.getElementById("login-name").innerHTML = document.getElementById("exampleInputEmail1").value;
-        $('#partidas').modal('show');
+        $('#partidas').modal({
+		    show: true,
+			backdrop: false
+		});
       });
 	  
 	  document.getElementById("ir-home").addEventListener("click", function(){
@@ -203,8 +274,31 @@
         $('#no-conectado').modal('show');
       });
 	  
+	  document.getElementById("cerrar-partida-actual").addEventListener("click", function(){
+	    $('#cerrar-partida').modal('hide')
+	    document.getElementById("zonanorte").innerHTML = "";
+	    document.getElementById("zonacentro").innerHTML = "";
+		document.getElementById("zonasur").innerHTML = "";
+		document.getElementById("zonaustral").innerHTML = "";
+		$('#progreso-comunicacion').css("width", "0%");
+		$('#progreso-conocimiento').css("width", "0%");
+		$('#progreso-prevencion').css("width", "0%");
+		$('#progreso-general').css("width", "0%");
+        $('#partidas').modal({
+		    show: true,
+			backdrop: false
+		});
+		$('#boton-cerrar-partida').addClass( "hidden" );
+      });
+	  
 	   document.getElementById("nueva-partida").addEventListener("click", function(){
         $('#partidas').modal('hide');
+		$('#boton-cerrar-partida').removeClass( "hidden" );
+		
+		$('#progreso-comunicacion').css("width", "30%");
+		$('#progreso-conocimiento').css("width", "30%");
+		$('#progreso-prevencion').css("width", "30%");
+		$('#progreso-general').css("width", "2%");
 		
 		var zona1_premio1 = document.createElement("img");
 		var zona1_premio2 = document.createElement("img");
@@ -310,53 +404,53 @@
 	    var zona4_desafioEsp3 = document.createElement("img");
 	    var zona4_desafioEsp4 = document.createElement("img");
 		
-		zona1_premio1.setAttribute("src", "assets/img/premio.png");
+		zona1_premio1.setAttribute("src", "assets/img/premio-lock.png");
 		zona1_premio2.setAttribute("src", "assets/img/premio-lock.png");
 	    zona1_premio3.setAttribute("src", "assets/img/premio-lock.png");
-		zona1_misterio1.setAttribute("src", "assets/img/pregunta.png");
-		zona1_misterio2.setAttribute("src", "assets/img/pregunta.png");
-	    zona1_misterio3.setAttribute("src", "assets/img/pregunta.png");
-		zona1_conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
-		zona1_conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
-	    zona1_conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
-	    zona1_conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
-	    zona1_conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
-	    zona1_desafio1.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio2.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio3.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio4.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio5.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio6.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio7.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio8.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio9.setAttribute("src", "assets/img/otro.png");
-	    zona1_desafio10.setAttribute("src", "assets/img/otro.png");
+		zona1_misterio1.setAttribute("src", "assets/img/pregunta-lock.png");
+		zona1_misterio2.setAttribute("src", "assets/img/pregunta-lock.png");
+	    zona1_misterio3.setAttribute("src", "assets/img/pregunta-lock.png");
+		zona1_conocimiento1.setAttribute("src", "assets/img/sabiasq-lock.png");
+		zona1_conocimiento2.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona1_conocimiento3.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona1_conocimiento4.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona1_conocimiento5.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona1_desafio1.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio2.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio3.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio4.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio5.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio6.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio7.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio8.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio9.setAttribute("src", "assets/img/otro-lock.png");
+	    zona1_desafio10.setAttribute("src", "assets/img/otro-lock.png");
 	    zona1_desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona1_desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona1_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona1_desafioEsp4.setAttribute("src", "assets/img/kimgen-lock.png");
 		
-		zona2_premio1.setAttribute("src", "assets/img/premio.png");
+		zona2_premio1.setAttribute("src", "assets/img/premio-lock.png");
 		zona2_premio2.setAttribute("src", "assets/img/premio-lock.png");
 	    zona2_premio3.setAttribute("src", "assets/img/premio-lock.png");
-		zona2_misterio1.setAttribute("src", "assets/img/pregunta.png");
-		zona2_misterio2.setAttribute("src", "assets/img/pregunta.png");
-	    zona2_misterio3.setAttribute("src", "assets/img/pregunta.png");
-		zona2_conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
-		zona2_conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
-	    zona2_conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
-	    zona2_conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
-	    zona2_conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
-	    zona2_desafio1.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio2.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio3.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio4.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio5.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio6.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio7.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio8.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio9.setAttribute("src", "assets/img/otro.png");
-	    zona2_desafio10.setAttribute("src", "assets/img/otro.png");
+		zona2_misterio1.setAttribute("src", "assets/img/pregunta-lock.png");
+		zona2_misterio2.setAttribute("src", "assets/img/pregunta-lock.png");
+	    zona2_misterio3.setAttribute("src", "assets/img/pregunta-lock.png");
+		zona2_conocimiento1.setAttribute("src", "assets/img/sabiasq-lock.png");
+		zona2_conocimiento2.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona2_conocimiento3.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona2_conocimiento4.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona2_conocimiento5.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona2_desafio1.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio2.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio3.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio4.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio5.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio6.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio7.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio8.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio9.setAttribute("src", "assets/img/otro-lock.png");
+	    zona2_desafio10.setAttribute("src", "assets/img/otro-lock.png");
 	    zona2_desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona2_desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona2_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
@@ -388,27 +482,27 @@
 	    zona3_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona3_desafioEsp4.setAttribute("src", "assets/img/kimgen-lock.png");
 		
-		zona4_premio1.setAttribute("src", "assets/img/premio.png");
+		zona4_premio1.setAttribute("src", "assets/img/premio-lock.png");
 		zona4_premio2.setAttribute("src", "assets/img/premio-lock.png");
 	    zona4_premio3.setAttribute("src", "assets/img/premio-lock.png");
-		zona4_misterio1.setAttribute("src", "assets/img/pregunta.png");
-		zona4_misterio2.setAttribute("src", "assets/img/pregunta.png");
-	    zona4_misterio3.setAttribute("src", "assets/img/pregunta.png");
-		zona4_conocimiento1.setAttribute("src", "assets/img/sabiasq.png");
-		zona4_conocimiento2.setAttribute("src", "assets/img/sabiasq.png");
-	    zona4_conocimiento3.setAttribute("src", "assets/img/sabiasq.png");
-	    zona4_conocimiento4.setAttribute("src", "assets/img/sabiasq.png");
-	    zona4_conocimiento5.setAttribute("src", "assets/img/sabiasq.png");
-	    zona4_desafio1.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio2.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio3.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio4.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio5.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio6.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio7.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio8.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio9.setAttribute("src", "assets/img/otro.png");
-	    zona4_desafio10.setAttribute("src", "assets/img/otro.png");
+		zona4_misterio1.setAttribute("src", "assets/img/pregunta-lock.png");
+		zona4_misterio2.setAttribute("src", "assets/img/pregunta-lock.png");
+	    zona4_misterio3.setAttribute("src", "assets/img/pregunta-lock.png");
+		zona4_conocimiento1.setAttribute("src", "assets/img/sabiasq-lock.png");
+		zona4_conocimiento2.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona4_conocimiento3.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona4_conocimiento4.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona4_conocimiento5.setAttribute("src", "assets/img/sabiasq-lock.png");
+	    zona4_desafio1.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio2.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio3.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio4.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio5.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio6.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio7.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio8.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio9.setAttribute("src", "assets/img/otro-lock.png");
+	    zona4_desafio10.setAttribute("src", "assets/img/otro-lock.png");
 	    zona4_desafioEsp1.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona4_desafioEsp2.setAttribute("src", "assets/img/kimgen-lock.png");
 	    zona4_desafioEsp3.setAttribute("src", "assets/img/kimgen-lock.png");
@@ -726,261 +820,311 @@
 	    $( "body" ).on( "click", "#zona4_desafioEsp3", zona4_desafioEsp3_clic);
 	    $( "body" ).on( "click", "#zona4_desafioEsp4", zona4_desafioEsp4_clic);
 		
-		$( "zona1_premio1").addClass( "pincho ubic1" );
-		$( "zona1_premio2").addClass( "pincho ubic8" );
-	    $( "zona1_premio3").addClass( "pincho ubic14" );
-	    $( "zona1_misterio1").addClass( "pincho ubic2" );
-	    $( "zona1_misterio2").addClass( "pincho ubic24" );
-	    $( "zona1_misterio3").addClass( "pincho ubic20" );
-	    $( "zona1_conocimiento1").addClass( "pincho ubic3" );
-	    $( "zona1_conocimiento2").addClass( "pincho ubic7" );
-	    $( "zona1_conocimiento3").addClass( "pincho ubic13" );
-	    $( "zona1_conocimiento4").addClass( "pincho ubic17" );
-	    $( "zona1_conocimiento5").addClass( "pincho ubic21" );
-	    $( "zona1_desafio1").addClass( "pincho ubic4" );
-	    $( "zona1_desafio2").addClass( "pincho ubic6" );
-	    $( "zona1_desafio3").addClass( "pincho ubic9" );
-	    $( "zona1_desafio4").addClass( "pincho ubic12" );
-	    $( "zona1_desafio5").addClass( "pincho ubic16" );
-	    $( "zona1_desafio6").addClass( "pincho ubic18" );
-	    $( "zona1_desafio7").addClass( "pincho ubic22" );
-	    $( "zona1_desafio8").addClass( "pincho ubic23" );
-	    $( "zona1_desafio9").addClass( "pincho ubic11" );
-	    $( "zona1_desafio10").addClass( "pincho ubic25" );
-	    $( "zona1_desafioEsp1").addClass( "pincho ubic5" );
-	    $( "zona1_desafioEsp2").addClass( "pincho ubic10" );
-	    $( "zona1_desafioEsp3").addClass( "pincho ubic15" );
-	    $( "zona1_desafioEsp4").addClass( "pincho ubic19" );
+		$("#zona1_premio1").addClass( "pincho ubic1" );
+		$("#zona1_premio2").addClass( "pincho ubic8" );
+	    $("#zona1_premio3").addClass( "pincho ubic14" );
+	    $("#zona1_misterio1").addClass( "pincho ubic2" );
+	    $("#zona1_misterio2").addClass( "pincho ubic24" );
+	    $("#zona1_misterio3").addClass( "pincho ubic20" );
+	    $("#zona1_conocimiento1").addClass( "pincho ubic3" );
+	    $("#zona1_conocimiento2").addClass( "pincho ubic7" );
+	    $("#zona1_conocimiento3").addClass( "pincho ubic13" );
+	    $("#zona1_conocimiento4").addClass( "pincho ubic17" );
+	    $("#zona1_conocimiento5").addClass( "pincho ubic21" );
+	    $("#zona1_desafio1").addClass( "pincho ubic4" );
+	    $("#zona1_desafio2").addClass( "pincho ubic6" );
+	    $("#zona1_desafio3").addClass( "pincho ubic9" );
+	    $("#zona1_desafio4").addClass( "pincho ubic12" );
+	    $("#zona1_desafio5").addClass( "pincho ubic16" );
+	    $("#zona1_desafio6").addClass( "pincho ubic18" );
+	    $("#zona1_desafio7").addClass( "pincho ubic22" );
+	    $("#zona1_desafio8").addClass( "pincho ubic23" );
+	    $("#zona1_desafio9").addClass( "pincho ubic11" );
+	    $("#zona1_desafio10").addClass( "pincho ubic25" );
+	    $("#zona1_desafioEsp1").addClass( "pincho ubic5" );
+	    $("#zona1_desafioEsp2").addClass( "pincho ubic10" );
+	    $("#zona1_desafioEsp3").addClass( "pincho ubic15" );
+	    $("#zona1_desafioEsp4").addClass( "pincho ubic19" );
 		
-	    $( "zona2_premio1").addClass( "pincho" );
-	    $( "zona2_premio2").addClass( "pincho" );
-	    $( "zona2_premio3").addClass( "pincho" );
-	    $( "zona2_misterio1").addClass( "pincho" );
-	    $( "zona2_misterio2").addClass( "pincho" );
-	    $( "zona2_misterio3").addClass( "pincho" );
-	    $( "zona2_conocimiento1").addClass( "pincho" );
-	    $( "zona2_conocimiento2").addClass( "pincho" );
-	    $( "zona2_conocimiento3").addClass( "pincho" );
-	    $( "zona2_conocimiento4").addClass( "pincho" );
-	    $( "zona2_conocimiento5").addClass( "pincho" );
-	    $( "zona2_desafio1").addClass( "pincho" );
-	    $( "zona2_desafio2").addClass( "pincho" );
-	    $( "zona2_desafio3").addClass( "pincho" );
-	    $( "zona2_desafio4").addClass( "pincho" );
-	    $( "zona2_desafio5").addClass( "pincho" );
-	    $( "zona2_desafio6").addClass( "pincho" );
-	    $( "zona2_desafio7").addClass( "pincho" );
-	    $( "zona2_desafio8").addClass( "pincho" );
-	    $( "zona2_desafio9").addClass( "pincho" );
-	    $( "zona2_desafio10").addClass( "pincho" );
-	    $( "zona2_desafioEsp1").addClass( "pincho" );
-	    $( "zona2_desafioEsp2").addClass( "pincho" );
-	    $( "zona2_desafioEsp3").addClass( "pincho" );
-	    $( "zona2_desafioEsp4").addClass( "pincho" );
+	    $("#zona2_premio1").addClass( "pincho ubic26" );
+	    $("#zona2_premio2").addClass( "pincho ubic10" );
+	    $("#zona2_premio3").addClass( "pincho ubic21" );
+	    $("#zona2_misterio1").addClass( "pincho ubic30" );
+	    $("#zona2_misterio2").addClass( "pincho ubic15" );
+	    $("#zona2_misterio3").addClass( "pincho ubic19" );
+	    $("#zona2_conocimiento1").addClass( "pincho ubic27" );
+	    $("#zona2_conocimiento2").addClass( "pincho ubic31" );
+	    $("#zona2_conocimiento3").addClass( "pincho ubic13" );
+	    $("#zona2_conocimiento4").addClass( "pincho ubic18" );
+	    $("#zona2_conocimiento5").addClass( "pincho ubic24" );
+	    $("#zona2_desafio1").addClass( "pincho ubic29" );
+	    $("#zona2_desafio2").addClass( "pincho ubic32" );
+	    $("#zona2_desafio3").addClass( "pincho ubic9" );
+	    $("#zona2_desafio4").addClass( "pincho ubic11" );
+	    $("#zona2_desafio5").addClass( "pincho ubic14" );
+	    $("#zona2_desafio6").addClass( "pincho ubic17" );
+	    $("#zona2_desafio7").addClass( "pincho ubic20" );
+	    $("#zona2_desafio8").addClass( "pincho ubic22" );
+	    $("#zona2_desafio9").addClass( "pincho ubic25" );
+	    $("#zona2_desafio10").addClass( "pincho ubic23" );
+	    $("#zona2_desafioEsp1").addClass( "pincho ubic28" );
+	    $("#zona2_desafioEsp2").addClass( "pincho ubic8" );
+	    $("#zona2_desafioEsp3").addClass( "pincho ubic12" );
+	    $("#zona2_desafioEsp4").addClass( "pincho ubic16" );
 		
-	    $( "zona3_premio1").addClass( "pincho" );
-	    $( "zona3_premio2").addClass( "pincho" );
-	    $( "zona3_premio3").addClass( "pincho" );
-	    $( "zona3_misterio1").addClass( "pincho" );
-	    $( "zona3_misterio2").addClass( "pincho" );
-	    $( "zona3_misterio3").addClass( "pincho" );
-	    $( "zona3_conocimiento1").addClass( "pincho" );
-	    $( "zona3_conocimiento2").addClass( "pincho" );
-	    $( "zona3_conocimiento3").addClass( "pincho" );
-	    $( "zona3_conocimiento4").addClass( "pincho" );
-	    $( "zona3_conocimiento5").addClass( "pincho" );
-	    $( "zona3_desafio1").addClass( "pincho" );
-	    $( "zona3_desafio2").addClass( "pincho" );
-	    $( "zona3_desafio3").addClass( "pincho" );
-	    $( "zona3_desafio4").addClass( "pincho" );
-	    $( "zona3_desafio5").addClass( "pincho" );
-	    $( "zona3_desafio6").addClass( "pincho" );
-	    $( "zona3_desafio7").addClass( "pincho" );
-	    $( "zona3_desafio8").addClass( "pincho" );
-	    $( "zona3_desafio9").addClass( "pincho" );
-	    $( "zona3_desafio10").addClass( "pincho" );
-	    $( "zona3_desafioEsp1").addClass( "pincho" );
-	    $( "zona3_desafioEsp2").addClass( "pincho" );
-	    $( "zona3_desafioEsp3").addClass( "pincho" );
-	    $( "zona3_desafioEsp4").addClass( "pincho" );
+	    $("#zona3_premio1").addClass( "pincho ubic32" );
+	    $("#zona3_premio2").addClass( "pincho ubic15" );
+	    $("#zona3_premio3").addClass( "pincho ubic22" );
+	    $("#zona3_misterio1").addClass( "pincho ubic31" );
+	    $("#zona3_misterio2").addClass( "pincho ubic17" );
+	    $("#zona3_misterio3").addClass( "pincho ubic20" );
+	    $("#zona3_conocimiento1").addClass( "pincho ubic28" );
+	    $("#zona3_conocimiento2").addClass( "pincho ubic10" );
+	    $("#zona3_conocimiento3").addClass( "pincho ubic13" );
+	    $("#zona3_conocimiento4").addClass( "pincho ubic24" );
+	    $("#zona3_conocimiento5").addClass( "pincho ubic25" );
+	    $("#zona3_desafio1").addClass( "pincho ubic26" );
+	    $("#zona3_desafio2").addClass( "pincho ubic29" );
+	    $("#zona3_desafio3").addClass( "pincho ubic30" );
+	    $("#zona3_desafio4").addClass( "pincho ubic9" );
+	    $("#zona3_desafio5").addClass( "pincho ubic11" );
+	    $("#zona3_desafio6").addClass( "pincho ubic14" );
+	    $("#zona3_desafio7").addClass( "pincho ubic16" );
+	    $("#zona3_desafio8").addClass( "pincho ubic19" );
+	    $("#zona3_desafio9").addClass( "pincho ubic21" );
+	    $("#zona3_desafio10").addClass( "pincho ubic23" );
+	    $("#zona3_desafioEsp1").addClass( "pincho ubic27" );
+	    $("#zona3_desafioEsp2").addClass( "pincho ubic8" );
+	    $("#zona3_desafioEsp3").addClass( "pincho ubic12" );
+	    $("#zona3_desafioEsp4").addClass( "pincho ubic18" );
 		
-	    $( "zona4_premio1").addClass( "pincho" );
-	    $( "zona4_premio2").addClass( "pincho" );
-	    $( "zona4_premio3").addClass( "pincho" );
-	    $( "zona4_misterio1").addClass( "pincho" );
-	    $( "zona4_misterio2").addClass( "pincho" );
-	    $( "zona4_misterio3").addClass( "pincho" );
-	    $( "zona4_conocimiento1").addClass( "pincho" );
-	    $( "zona4_conocimiento2").addClass( "pincho" );
-	    $( "zona4_conocimiento3").addClass( "pincho" );
-	    $( "zona4_conocimiento4").addClass( "pincho" );
-	    $( "zona4_conocimiento5").addClass( "pincho" );
-	    $( "zona4_desafio1").addClass( "pincho" );
-	    $( "zona4_desafio2").addClass( "pincho" );
-	    $( "zona4_desafio3").addClass( "pincho" );
-	    $( "zona4_desafio4").addClass( "pincho" );
-	    $( "zona4_desafio5").addClass( "pincho" );
-	    $( "zona4_desafio6").addClass( "pincho" );
-	    $( "zona4_desafio7").addClass( "pincho" );
-	    $( "zona4_desafio8").addClass( "pincho" );
-	    $( "zona4_desafio9").addClass( "pincho" );
-	    $( "zona4_desafio10").addClass( "pincho" );
-	    $( "zona4_desafioEsp1").addClass( "pincho" );
-	    $( "zona4_desafioEsp2").addClass( "pincho" );
-	    $( "zona4_desafioEsp3").addClass( "pincho" );
-	    $( "zona4_desafioEsp4").addClass( "pincho" );
+	    $("#zona4_premio1").addClass( "pincho ubic33" );
+	    $("#zona4_premio2").addClass( "pincho ubic18" );
+	    $("#zona4_premio3").addClass( "pincho ubic29" );
+	    $("#zona4_misterio1").addClass( "pincho ubic16" );
+	    $("#zona4_misterio2").addClass( "pincho ubic24" );
+	    $("#zona4_misterio3").addClass( "pincho ubic32" );
+	    $("#zona4_conocimiento1").addClass( "pincho ubic9" );
+	    $("#zona4_conocimiento2").addClass( "pincho ubic37" );
+	    $("#zona4_conocimiento3").addClass( "pincho ubic19" );
+	    $("#zona4_conocimiento4").addClass( "pincho ubic39" );
+	    $("#zona4_conocimiento5").addClass( "pincho ubic31" );
+	    $("#zona4_desafio1").addClass( "pincho ubic30" );
+	    $("#zona4_desafio2").addClass( "pincho ubic36" );
+	    $("#zona4_desafio3").addClass( "pincho ubic10" );
+	    $("#zona4_desafio4").addClass( "pincho ubic34" );
+	    $("#zona4_desafio5").addClass( "pincho ubic15" );
+	    $("#zona4_desafio6").addClass( "pincho ubic17" );
+	    $("#zona4_desafio7").addClass( "pincho ubic20" );
+	    $("#zona4_desafio8").addClass( "pincho ubic38" );
+	    $("#zona4_desafio9").addClass( "pincho ubic25" );
+	    $("#zona4_desafio10").addClass( "pincho ubic28" );
+	    $("#zona4_desafioEsp1").addClass( "pincho ubic8" );
+	    $("#zona4_desafioEsp2").addClass( "pincho ubic35" );
+	    $("#zona4_desafioEsp3").addClass( "pincho ubic21" );
+	    $("#zona4_desafioEsp4").addClass( "pincho ubic22" );
 
       });
 	  
 	function zona1_premio1_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_premio2_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_premio3_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_misterio1_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_misterio2_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_misterio3_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_conocimiento1_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_conocimiento2_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_conocimiento3_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_conocimiento4_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_conocimiento5_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio1_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio2_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio3_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio4_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio5_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio6_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio7_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio8_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio9_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafio10_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafioEsp1_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafioEsp2_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafioEsp3_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	function zona1_desafioEsp4_clic(){
+	    $('#zonanorte-lock').modal('show');
 	    return true;
 	}
 	  
 	function zona2_premio1_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_premio2_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_premio3_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_misterio1_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_misterio2_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_misterio3_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_conocimiento1_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_conocimiento2_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_conocimiento3_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_conocimiento4_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_conocimiento5_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio1_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio2_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio3_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio4_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio5_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio6_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio7_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio8_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio9_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafio10_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafioEsp1_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafioEsp2_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafioEsp3_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 	function zona2_desafioEsp4_clic(){
+	    $('#zonacentro-lock').modal('show');
 	    return true;
 	}
 		
@@ -1061,78 +1205,103 @@
 	}
 		
 	function zona4_premio1_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_premio2_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_premio3_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_misterio1_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_misterio2_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_misterio3_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_conocimiento1_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_conocimiento2_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_conocimiento3_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_conocimiento4_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_conocimiento5_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio1_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio2_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio3_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio4_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio5_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio6_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio7_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio8_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio9_clic(){
+		$('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafio10_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafioEsp1_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafioEsp2_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafioEsp3_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
 	function zona4_desafioEsp4_clic(){
+	    $('#zonaustral-lock').modal('show');
 	    return true;
 	}
       </script>
