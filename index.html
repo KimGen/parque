@@ -1415,7 +1415,37 @@
 		  $('#generico-lock').modal("show");
 		 }
 		 else{
-		 alert("source of image with alternate text = example - " + src);
+		 
+		 
+		 	show_hide('popup-kimgen');
+			document.getElementById("popup-kimgen").innerHTML = "";
+			var imagen2 = document.createElement("img");
+			imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
+			imagen2.setAttribute("id", "cerrar-popup-kimgen");
+			imagen2.addEventListener("click", cerrar_popup_kimgen_click);
+			$("#popup-kimgen").append(imagen2);
+	 
+			var imagen1 = document.createElement("img");
+			imagen1.setAttribute("src", "assets/img/pregunta1.png");
+			imagen1.setAttribute("id", "imagen1");
+			$("#popup-kimgen").append(imagen1);
+	 
+	        var desafio1_resp1 = $("<button type='button' id='pregunta1_resp1' class='btn btn-primary'>Grandes flujos de agua que <br>bajan por una quebrada o<br>cauce de agua, que<br>contienen rocas, tierra,<br>hojas y otros elementos.</button>");
+	        var desafio1_resp2 = $("<button type='button' id='pregunta1_resp2' class='btn btn-primary'>Ascenso explosivo del magma<br>de la tierra en<br>forma de lava y ceniza</button>");
+	        var desafio1_resp3 = $("<button type='button' id='pregunta1_resp3' class='btn btn-primary'>Aumento importante del curso<br>de agua en una<br>quebrada o lecho de río.</button>");
+	 
+	        $("#popup-kimgen").append(desafio1_resp1);
+	        $("#popup-kimgen").append(desafio1_resp2);
+	        $("#popup-kimgen").append(desafio1_resp3);
+	 
+	        $( "body" ).on( "click", "#pregunta1_resp1", pregunta1_resp1_click );
+	        $( "body" ).on( "click", "#pregunta1_resp2", pregunta1_resp2_click );
+	        $( "body" ).on( "click", "#pregunta1_resp3", pregunta1_resp3_click );
+		 
+		 
+		 
+		 
+		 
 		 }
 	}
 	function zona3_desafio2_clic(){
@@ -1658,6 +1688,25 @@
 	      $("#caja-para-casco").append(imagen2);
 		
 	 }
+	 
+	 
+	 
+	 
+	 
+	 	 function pregunta1_resp1_click() {
+	 var imagen2 = document.createElement("img");
+	 imagen2.setAttribute("src", "assets/img/bien.png");
+	 imagen2.setAttribute("id", "bien");
+	 imagen2.addEventListener("click", cerrar_popup_kimgen_click);
+	 $("#popup-kimgen").append(imagen2);
+	 }
+	 function pregunta1_resp2_click() {
+	    alert("respuesta incorrecta");
+	 }	
+	 function pregunta1_resp3_click() {
+	    alert("respuesta incorrecta");
+	 }	
+	 
       </script>
   </body>
 </html>
