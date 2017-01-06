@@ -10,6 +10,7 @@
 
     <title>Parque Geográfico | Kimgen Lab</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.vertical-tabs.css" rel="stylesheet">
     <link href="carousel.css" rel="stylesheet">
   </head>
 <!-- NAVBAR
@@ -23,25 +24,6 @@
               <button type="button" class="btn btn-amarillo btn-guardar navbar-btn" data-toggle="modal" data-target="#partida-guardada"><span class="glyphicon glyphicon-floppy-disk"></span></button>
               <button type="button" class="btn btn-verde navbar-btn navbar-right hidden" data-toggle="modal" data-target="#cerrar-partida" id="boton-cerrar-partida"><span class="glyphicon glyphicon-remove"></span></button>
               <button type="button" class="btn btn-verde navbar-btn btn-dropdown navbar-right" id="mostrar-tarjeta"><span class="glyphicon glyphicon-arrow-down"></span></button>
-              <div class="dropdown-menu" id="contenedorTarjeta">
-
-  <!-- Nav tabs -->
-  <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="text-vertical active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-    <li role="presentation" class="text-vertical"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-    <li role="presentation" class="text-vertical"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-    <li role="presentation" class="text-vertical"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
-  </ul>
-
-  <!-- Tab panes -->
-  <div class="tab-content">
-    <div role="tabpanel" class="tab-pane fade active" id="home">hola</div>
-    <div role="tabpanel" class="tab-pane fade" id="profile">como</div>
-    <div role="tabpanel" class="tab-pane fade" id="messages">estas</div>
-    <div role="tabpanel" class="tab-pane fade" id="settings">tu</div>
-  </div>
-
-              </div>
               <p class="navbar-text navbar-right" id="login-name"></p>
               <div class="progress navbar-right" id="amarilloProgress">
                  <div class="progress-bar" role="progressbar" id="progreso-comunicacion">
@@ -70,7 +52,148 @@
             </div>
           </div>
         </nav>
+              <div id="tarjeta" style="display: none;">
 
+    <div class="col-sm-1" style="padding-right:0;padding-left:0;"> <!-- required for floating -->
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs tabs-left sideways">
+        <li class="active"><a href="#home-v" data-toggle="tab">Bonos</a></li>
+        <li><a href="#profile-v" data-toggle="tab">Tarjetas</a></li>
+        <li><a href="#messages-v" data-toggle="tab">Dispositivos</a></li>
+        <li><a href="#settings-v" data-toggle="tab">Habilidades</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-11">
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div class="tab-pane active" id="home-v">
+		 <div class="col-xs-5" style="padding-top:40px; padding-left:0;padding-right:0;">
+		  <img src="assets/img/traje-lock.png" alt="traje">
+		 </div>
+		 <div class="col-xs-7" style="padding-top:20px;padding-left:0;padding-right:0;">
+		 <div class="media caja-bonos-kimgen">
+  <div class="media-left">
+      <img class="media-object" src="assets/img/moneda-kimgen.png" alt="...">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">000</h4>
+  </div>
+</div>
+<div class="media caja-bonos-kimgen">
+  <div class="media-left">
+      <img class="media-object" src="assets/img/moneda-fuego.png" alt="...">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">000</h4>
+  </div>
+</div>
+<div class="media caja-bonos-kimgen">
+  <div class="media-left">
+      <img class="media-object" src="assets/img/moneda-agua.png" alt="...">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">000</h4>
+  </div>
+</div>
+<div class="media caja-bonos-kimgen">
+  <div class="media-left">
+      <img class="media-object" src="assets/img/moneda-nube.png" alt="...">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">000</h4>
+  </div>
+</div>
+<div class="media caja-bonos-kimgen">
+  <div class="media-left">
+      <img class="media-object" src="assets/img/moneda-placa.png" alt="...">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">000</h4>
+  </div>
+</div>
+<div class="media caja-bonos-kimgen">
+  <div class="media-left">
+      <img class="media-object" src="assets/img/moneda-barro.png" alt="...">
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">000</h4>
+  </div>
+</div>
+		 </div>
+		</div>
+        <div class="tab-pane" id="profile-v">
+		 <div class="col-xs-5" style="padding-top:40px;padding-left:0;padding-right:0;">
+		  <img src="assets/img/traje-lock.png" alt="traje">
+		 </div>
+		 <div class="col-xs-7" style="padding-left:0;padding-right:0;">
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas pull-left"></div>
+		 </div>
+		</div>
+        <div class="tab-pane" id="messages-v">
+		 <div class="col-xs-5" style="padding-top:40px;padding-left:0;padding-right:0;">
+		  <img src="assets/img/traje-lock.png" alt="traje">
+		 </div>
+		 <div class="col-xs-7" style="padding-left:0;padding-right:0;">
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
+		 <div class="col-md-1 caja-bonos-kimgen cajas-tarjetas-grande pull-left"></div>
+		 </div>
+		</div>
+        <div class="tab-pane" id="settings-v">
+		 <div class="col-xs-5" style="padding-top:40px;padding-left:0;padding-right:0;">
+		  <img src="assets/img/traje-lock.png" alt="traje">
+		 </div>
+		 <div class="col-xs-7 vertical" style="padding-left:0;padding-right:0;">
+              <div class="progress progress-grande" id="azulProgress">
+                 <div class="progress-bar" role="progressbar" id="progreso-conocimiento-grande">
+				 	<img  class="brillo-progreso" src="assets/img/brillo-progreso.png" alt="brillo barra de progreso">
+                 </div>
+                 <span class="line-progress"></span>
+              </div>
+			  <p><small>Conocimiento</small></p>
+              <div class="progress progress-grande" id="rojoProgress">
+                 <div class="progress-bar" role="progressbar" id="progreso-prevencion-grande">
+				 	<img  class="brillo-progreso" src="assets/img/brillo-progreso.png" alt="brillo barra de progreso">
+                 </div>
+                 <span class="line-progress"></span>
+              </div>
+			  <p><small>Prevención</small></p>
+             <div class="progress progress-grande" id="amarilloProgress">
+                 <div class="progress-bar" role="progressbar" id="progreso-comunicacion-grande">
+				    <img  class="brillo-progreso" src="assets/img/brillo-progreso.png" alt="brillo barra de progreso">
+                 </div>
+                <span class="line-progress"></span>
+              </div>
+		     <p><small>Comunicación</small></p>
+		 </div>
+		</div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+              </div>
     
     <!-- Carousel
     ================================================== -->
@@ -86,12 +209,12 @@
           <div class="container" id="zonacentro">
           </div>
         </div>
-        <div class="item">
+        <div class="item active">
           <img class="third-slide" src="assets/img/zonasur.jpg" alt="Zona Sur de Chile">
           <div class="container" id="zonasur">
           </div>
         </div>
-        <div class="item active">
+        <div class="item">
           <img class="third-slide" src="assets/img/zonaustral.jpg" alt="Zona Austral de Chile">
           <div class="container" id="zonaustral">
           </div>
@@ -247,6 +370,23 @@
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
 
+	<div class="modal" tabindex="-1" role="dialog" id="generico-lock">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title">Elemento bloqueado</h4>
+		  </div>
+		  <div class="modal-body">
+			<p>Prueba con otro punto</p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -274,6 +414,11 @@
         $('#no-conectado').modal('show');
       });
 	  
+	  document.getElementById("mostrar-tarjeta").addEventListener("click", function(){
+		show_hide('tarjeta');
+      });
+	  
+	  
 	  document.getElementById("cerrar-partida-actual").addEventListener("click", function(){
 	    $('#cerrar-partida').modal('hide')
 	    document.getElementById("zonanorte").innerHTML = "";
@@ -284,6 +429,9 @@
 		$('#progreso-conocimiento').css("width", "0%");
 		$('#progreso-prevencion').css("width", "0%");
 		$('#progreso-general').css("width", "0%");
+		$('#progreso-comunicacion-grande').css("width", "0%");
+		$('#progreso-conocimiento-grande').css("width", "0%");
+		$('#progreso-prevencion-grande').css("width", "0%");
         $('#partidas').modal({
 		    show: true,
 			backdrop: false
@@ -299,6 +447,10 @@
 		$('#progreso-conocimiento').css("width", "30%");
 		$('#progreso-prevencion').css("width", "30%");
 		$('#progreso-general').css("width", "2%");
+		
+		$('#progreso-comunicacion-grande').css("width", "30%");
+		$('#progreso-conocimiento-grande').css("width", "30%");
+		$('#progreso-prevencion-grande').css("width", "30%");
 		
 		var zona1_premio1 = document.createElement("img");
 		var zona1_premio2 = document.createElement("img");
@@ -927,7 +1079,11 @@
       });
 	  
 	function zona1_premio1_clic(){
-	    $('#zonanorte-lock').modal('show');
+	    if ($('#progreso-general').width() < 40) { 
+            $('#zonanorte-lock').modal('show');
+        } else {
+            greeting = "Good evening";
+        }
 	    return true;
 	}
 	function zona1_premio2_clic(){
@@ -1129,13 +1285,55 @@
 	}
 		
 	function zona3_premio1_clic(){
-	    return true;
+	    var src = $('img[id="zona3_premio1"]').attr('src');
+		 if (src == "assets/img/premio-lock.png" ){
+		  $('#generico-lock').modal("show");
+		 }
+		 else
+		 {
+		    incrementar_general();
+			
+			
+			
+			show_hide('popup-kimgen');
+	        document.getElementById("popup-kimgen").innerHTML = "";
+	        var imagen2 = document.createElement("img");
+	        imagen2.setAttribute("src", "assets/img/cerrarpopup.png");
+	        imagen2.setAttribute("id", "cerrar-popup-kimgen");
+	        imagen2.addEventListener("click", cerrar_popup_kimgen_click);	
+	        $("#popup-kimgen").append(imagen2);
+			
+	        var imagen1 = document.createElement("img");
+	        imagen1.setAttribute("src", "assets/img/premio1.png");
+	        imagen1.setAttribute("id", "imagen1");
+	        $("#popup-kimgen").append(imagen1);
+	        document.getElementById("zona3_premio1").setAttribute("src", "assets/img/premio-no.png");
+	        $( "body" ).off( "click", "#zona3_premio1", zona3_premio1_click )
+	        document.getElementById("zona3_premio1").addEventListener("click", zona3_premio3_clic);
+			
+			
+			
+			
+			
+		 }
 	}
 	function zona3_premio2_clic(){
-	    return true;
+	    var src = $('img[id="zona3_premio2"]').attr('src');
+		 if (src == "assets/img/premio-lock.png" ){
+		  $('#generico-lock').modal("show");
+		 }
+		 else{
+		 alert("source of image with alternate text = example - " + src);
+		 }
 	}
 	function zona3_premio3_clic(){
-	    return true;
+	    var src = $('img[id="zona3_premio3"]').attr('src');
+		 if (src == "assets/img/premio-lock.png" ){
+		  $('#generico-lock').modal("show");
+		 }
+		 else{
+		 alert("source of image with alternate text = example - " + src);
+		 }
 	}
 	function zona3_misterio1_clic(){
 	    return true;
@@ -1303,6 +1501,17 @@
 	function zona4_desafioEsp4_clic(){
 	    $('#zonaustral-lock').modal('show');
 	    return true;
+	}
+		 function show_hide(id){
+  if (document.getElementById){
+  var el = document.getElementById(id);
+  el.style.display = (el.style.display == 'none') ? 'block' : 'none';
+}}
+    function incrementar_general(){
+			$('#progreso-general').css("width", "2%");
+		    var curr_width = $('#progreso-general').width();
+		    curr_width = curr_width + 1;
+		    $('#progreso-general').css("width", curr_width+"%");
 	}
       </script>
   </body>
