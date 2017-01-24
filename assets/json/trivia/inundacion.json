@@ -1,0 +1,210 @@
+{
+  "questions": [
+    {
+      "question": "¿Qué es una inundación?",
+      "choices": [
+        "Es el aumento significativo del nivel de agua de un rio, lago o masa de agua, la cual sale de su cauce y se dispone temporalmente fuera de éste.",
+        "Es el incremento significativo del nivel del mar por efecto de un fenómeno natural.",
+        "Es el arrastre de distintos tipos de materiales por efecto de la pendiente durante un movimiento tectónico.",
+        "Es el cambio de uso de suelo por efecto del incremento de nivel de mar en espacios litorales."
+      ],
+      "correctAnswer": 0
+    }, {
+      "question": "¿Qué es anegamiento?",
+      "choices": ["Asegura abastecimiento hídrico a las zonas húmedas adyacentes a los cursos de agua.",
+              "Fertiliza y repone los suelos de las cuencas bajas.",
+              "Mejora la infiltración.",
+              "Ninguna de las anteriores."],
+      "correctAnswer": 0
+  }, {
+      "question": "¿Por qué las inundaciones son un riesgo?",
+      "choices": ["Porque potencialmente puede producir daños a personas y  al espacio habitado.",
+              "Porque afecta fundamentalmente a la fauna nativa.",
+              "Porque dificulta el transporte de sedimentos.",
+              "Porque limita el escurrimiento superficial."],
+      "correctAnswer": 0
+  }, {
+      "question": "Las inundaciones en el sur de Chile son eventos que:",
+      "choices": ["Ocurren frecuentemente.",
+              "Ocurren esporádicamente.",
+              "Ocurren siempre.",
+              "Nunca ocurren."],
+      "correctAnswer": 2
+  }, {
+      "question": "¿Cuál es la combinación más apropiada de factores que determina una inundación?",
+      "choices": ["Precipitaciones intensas en un corto periodo de tiempo y suelo con baja capacidad de infiltración.",
+              "Precipitaciones en un periodo de tiempo largo y suelo con alta capacidad de infiltración.",
+              "Alta infiltración del suelo y precipitaciones mensuales.",
+              "Precipitaciones, llanuras aluviales y vegetación nativa."],
+      "correctAnswer": 0
+  }, {
+      "question": "¿Cuáles son las áreas geográficas de riesgos más frecuentes?",
+      "choices": ["Llanuras de inundación.",
+              "Unidades de vega.",
+              "Abanicos aluviales.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuándo comienza la peligrosidad natural de una inundación?",
+      "choices": ["Partir del momento en que un caudal  supera el su nivel.",
+              "Cuando las personas habitan cerca de cursos de agua.",
+              "A partir del momento en que se ha detectado el riesgo.",
+              "Cuando los animales huyen de la inundación."],
+      "correctAnswer": 0
+  }, {
+      "question": "Respecto al movimiento agua en el suelo, ¿cuál de estas asociaciones es incorrecta?:",
+      "choices": ["Cuanto menor el tamaño de poros del suelo mayores el  escurrimiento superficial del agua.",
+              "A mayor capacidad de infiltración mayor capacidad del suelo para aceptar agua.",
+              "El escurrimiento superficial se incrementa con lluvias intensas.",
+              "La evacuación subterránea del agua se incrementa cuando los poros están saturados."],
+      "correctAnswer": 3
+  }, {
+      "question": "Las cuencas extensas, largas y pendientes moderadas favorecen:",
+      "choices": ["Drenajes de tiempo lentos de respuesta.",
+              "Drenajes de tiempo rápidos de respuesta.",
+              "EL escurrimiento superficial de agua.",
+              "La evapotranspiración de la vegetación."],
+      "correctAnswer": 0
+  }, {
+      "question": "Las cuencas pequeñas, de alta pendiente, producen:",
+      "choices": ["Avenidas súbitas a gran velocidad.",
+              "Avenidas predecibles  a baja velocidad.",
+              "Deslizamientos de tierra.",
+              "Sedimentos de montaña"],
+      "correctAnswer": 0
+  }, {
+      "question": "La forma de la red de drenaje, área y pendiente de una cuenca hidrográfica permite:",
+      "choices": ["Estudiar la génesis y propagación de  las inundaciones.",
+              "Conocer el volumen de la remoción en masa.",
+              "Analizar la peligrosidad natural.",
+              "A y C"],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuál de estos planteamientos respecto  de  la inundación no es correcta?",
+      "choices": ["Crecidas súbitas y crecidas lentas.",
+              "Inundaciones fluviales, pluviales, costeras.",
+              "Inundaciones en manto.",
+              "Remoción en masa y tsunamis."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuáles de estos factores puede incrementar el riesgo de  una inundación?",
+      "choices": ["La extracción total de la cobertura vegetal  de una cuenca hidrográfica.",
+              "Litología poco permeable.",
+              "Alteración entrópica de la red de drenaje.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Qué vegetación es indicativa de espacios húmedos potencialmente inundables?",
+      "choices": ["Vegetación compuesta de  especies de cortaderas, juncos y pitrantos.",
+              "Bosques de roble de altura y ciprés de la cordillera.",
+              "Bosques de olivillo costero y siempre verde.",
+              "Bosques de roble, raulí y tepa."],
+      "correctAnswer": 0
+  }, {
+      "question": "En una cuenca hidrográfica pequeña, la relación correcta “a mayor volumen de precipitación…”",
+      "choices": ["Mayor probabilidad de inundación.",
+              "Menor escurriendo superficial del agua.",
+              "Mayor riesgo para la población.",
+              "A y C."],
+      "correctAnswer": 3
+  }, {
+      "question": "Para predecir una inundación es posible:",
+      "choices": ["Utilizar técnicas asociadas al los SIG y percepción remota.",
+              "Estudiar el hidrograma de crecidas.",
+              "Usar modelos hidrológicos.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "La connotación negativa de las inundaciones se debe a:",
+      "choices": ["La presencia de asentamientos humanos en zonas de alta peligrosidad natural.",
+              "El alto volumen de precipitaciones en áreas montañosas.",
+              "El desarrollo natural de abanicos aluviales.",
+              "La presencia de humedales en llanuras de inundación."],
+      "correctAnswer": 0
+  }, {
+      "question": "¿Cuáles son los potenciales efectos de una inundación sobre el medio natural?",
+      "choices": ["Cambios en el paisaje.",
+              "Cambios en la dinámica fluvial.",
+              "Cambio en la dinámica de aporte de sedimentos.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuáles son los potenciales efectos de una inundación sobre el medio construido?",
+      "choices": ["Colapso del sistema de drenaje de las ciudades.",
+              "Corte de las vías de comunicación y suministro de energía.",
+              "Daños a la infraestructura urbana.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuáles son las causa potenciales de una inundación en un territorio?",
+      "choices": ["Precipitaciones intensas.",
+              "Tsunamis.",
+              "Rotura de presas.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuáles son las medidas preventivas ante un evento de inundación?",
+      "choices": ["Diques de contención.",
+              "Muros de protección.",
+              "Embalses.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuáles de las siguientes medidas de prevención son de tipo no estructural?",
+      "choices": ["Educación del riesgo",
+              "Políticas de gestión",
+              "Planificación del territorio.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "Antes de un aviso de inundación algunas de las medidas sugeridas son:",
+      "choices": ["Mantener números telefónicos de emergencia.",
+              "Mantener Kit de primeros auxilios.",
+              "Mantener las vías de evacuación de aguas libres de tierra.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "Cuando la inundación es inminente algunas de las medidas sugeridas son:",
+      "choices": ["Conocer las áreas locales altas cercanas donde ponerse en resguardo.",
+              "Cortar la provisión de electricidad, gas y agua de la casa.",
+              "Retirar los alimentos perecederos del refrigerador, colocar en bolsas plásticas o recipientes y sellarlos.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+	  }, {
+      "question": "Después de la inundación algunas acciones a seguir son las siguientes:",
+      "choices": ["Se debe esperar que las autoridades declaren el área segura y permitan volver a los hogares.",
+              "Una vez en el hogar, verificar si el uso de la electricidad, gas y agua es seguro.",
+              "Beber agua de la llave.",
+              "A y B"],
+      "correctAnswer": 3
+  }, {
+      "question": "Un sistema de alerta de inundación debe desarrollarse considerando a lo menos las  siguientes etapas:",
+      "choices": ["Estimar los valores de precipitación.",
+              "Estimar caudales de cauces y canales.",
+              "Sistematizar la experiencia histórica y percepción del riesgo.",
+              "Todas las anteriores."],
+      "correctAnswer": 3
+  }, {
+      "question": "¿Cuál de estas afirmaciones es incorrecta?",
+      "choices": ["Las inundaciones son fenómenos impredecibles.",
+              "El riesgo de inundación puede ser zonificado.",
+              "La planificación del territorio contribuye a minimizar el riesgo.",
+              "Los modelos hidrológicos pueden contribuir al conocimiento del riesgo."],
+      "correctAnswer": 0
+  }, {
+      "question": "¿En qué país han ocurrido las mayores pérdidas económicas por inundaciones?",
+      "choices": ["China",
+           "Perú",
+           "Bolivia",
+           "Corea del sur."],
+      "correctAnswer": 0
+},{
+      "question": "¿Cuál es el cuerpo legal que permitiría la incorporación de áreas restringidas para el desarrollo urbano en zonas de inundación?",
+      "choices": ["Ley General de Urbanismo y Construcciones",
+           "Ley de zonificación de áreas inundables",
+           "Reglamento de de áreas protegidas",
+           "Reglamento de construcción urbana"],
+      "correctAnswer": 0
+}
+  ]
+}

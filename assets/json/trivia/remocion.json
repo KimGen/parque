@@ -1,0 +1,314 @@
+{
+  "questions": [
+    {
+      "question": "Marque el grupo de procesos de remoción en masa correcto:",
+      "choices": [
+        "Flujo de barro, flujo de piroclasto, solifluxión, flujo de permafrost.",
+        "Reptación de suelo, flujo de barro, avalancha, deslizamiento.",
+        "Flujo de tierra, flujo de corrientes de aire, avalancha, flujo de permafrost.",
+        "Reptación de suelo, deslizamiento, flujo de permarost, solifluxión."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Marque los tipos de movimiento en masa correctos:",
+      "choices": [
+        "Caída, deslizamiento de roca, Flujo, Reptación.",
+        "Raptación, Deformaciones gravitacionales, volcamiento, caídas.",
+        "Propagación lateral, deslizamiento glaciar, flujo, raptación.",
+        "Flujo, propagación frontal, reptación, caídas."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Las avalanchas, corresponden a ……… que pueden recorrer varios kilómetros",
+      "choices": [
+        "Flujos de tierra y roca con poco contenido de agua.",
+        "Flujos de lava y glasear fusionado.",
+        "Flujos de agua con poco contenido de fosforo.",
+        "Flujos de tierra y roca con alto contenido de agua."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Marque correctamente las causas de origen de los deslizamientos",
+      "choices": [
+        "Origen litológico, estructural, antrópico, climático y tectónico.",
+        "Origen tectónico, por falta de planificación territorial en la zona, climático y estructurales.",
+        "Origen litológico, limnológico, antrópico, climático.",
+        "Origen aleatorio."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "¿Cuales son los detonantes de la remoción en masa? Marque la alternativa incorrecta:",
+      "choices": [
+        "Perdida de cobertura vegetal a causa de las talas y quemas.",
+        "Construcción de surcos en sentido de la pendiente o de instalaciones con materiales pesados en terrenos débiles.",
+        "Plantación de Triticum aestivum.",
+        "Compactación del suelo por sobrepastoreo."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Una zona morfológica de un movimiento en masa típico es el Pie que se caracteriza por:",
+      "choices": [
+        "Presentar una morfología irregular de escarpes y contra escarpes, con cimas planas y dispuestas en forma escalonada.",
+        "Desarrollar una morfología en forma de cuneta, en donde se presentan concentraciones importantes de agua saturando el material removido en forma de charcos.",
+        "Desarrollar una morfología abombada o protuberante con presencia de numerosas grietas.",
+        "Presentar una morfología ondulada y lobulada en abanico por la expansión del material deslizado sobre el terreno intacto."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Que hacer antes de un evento de remoción en masa?.",
+      "choices": [
+        "Implemente un efectivo sistema de alarma, para cuando sea necesario adelantar la evacuación.",
+        "Revise los equipos de radiocomunicación y efectué mantenimientos periódicos a los mismos.",
+        "Prestar mucha atención a los rumores.",
+        "Tener un kit de emergencia a mano (linterna, radio transistor, pilas, pito, elementos de primeros auxilios, agua potable)"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "¿Que hacer durante un evento de remoción en masa?.",
+      "choices": [
+        "Si cuenta con algunos segundos, aprovéchelos, evacue hacia el lugar que ya se ha establecido como zona de seguridad.",
+        "Sintonizar la radio y estar atento a las indicaciones que le den por este medio los organismos de socorro y rescate.",
+        "No difundir rumores",
+        "Tener un kit de emergencia a mano (linterna, radio transistor, pilas, pito, elementos de primeros auxilios, agua potable)"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Que hacer después de un evento de remoción en masa?. Marque la alternativa incorrecta:",
+      "choices": [
+        "No utilice servicios públicos como transporte, teléfonos, hospitales si no es estrictamente necesario.",
+        "Permanecer en un sitio seguro hasta cuando lo indiquen los organismos de prevención y atención de desastres.",
+        "Ir al supermercado aprovechando el desastre a abastecerse de la mayor cantidad de víveres posibles.",
+        "Aplique las medidas preventivas para no volver a sufrir las consecuencias."
+      ],
+        "correctAnswer": 2
+    },
+    {
+      "question": "Una zona morfológica de un movimiento en masa típico es el Cabeza que se caracteriza por:",
+      "choices": [
+        "Presentar una morfología irregular de escarpes y contra escarpes, con cimas planas y dispuestas en forma escalonada.",
+        "Desarrollar una morfología en forma de cuneta, en donde se presentan concentraciones importantes de agua saturando el material removido en forma de charcos.",
+        "Desarrollar una morfología abombada o protuberante con presencia de numerosas grietas.",
+        "Presentar una morfología ondulada y lobulada en abanico por la expansión del material deslizado sobre el terreno intacto."
+      ],
+        "correctAnswer": 0
+    },
+    {
+      "question": "Una zona morfológica de un movimiento en masa típico es el Cuerpo que se caracteriza por:",
+      "choices": [
+        "Presentar una morfología irregular de escarpes y contra escarpes, con cimas planas y dispuestas en forma escalonada.",
+        "Desarrollar una morfología en forma de cuneta, en donde se presentan concentraciones importantes de agua saturando el material removido en forma de charcos.",
+        "Desarrollar una morfología abombada o protuberante con presencia de numerosas grietas.",
+        "Presentar una morfología ondulada y lobulada en abanico por la expansión del material deslizado sobre el terreno intacto."
+      ],
+        "correctAnswer": 1
+    },
+    {
+      "question": "La remoción en masa es:",
+      "choices": [
+        "Todo desplazamiento hacia arriba de un volumen de material litológico, formación superficial, suelo coberturas vegetales y/o  escombros.",
+        "Todo desplazamiento hacia abajo de un volumen de material litológico, formación superficial, suelo coberturas vegetales y/o  escombros.",
+        "Todo compactamiento de un volumen de material litológico, formación superficial, suelo coberturas vegetales y/o  escombros.",
+        "Todo arado de tierra con maquinaria pesada."
+      ],
+        "correctAnswer": 1
+    },
+    {
+      "question": "La propuesta política pública dicha por el gobierno del presidente Sebastián Piñera para la reducción del riesgo de remoción en masa es:",
+      "choices": [
+        "Normar el uso del territorio, en función del peligro de remociones en masa y de la exposición a sus efectos, tanto de los asentamientos humanaos como de la infraestructura estratégica.",
+        "Legislar y normar del territorio, en función del peligro de remociones en masa y de la exposición a sus efectos, tanto de los asentamientos humanaos como de la infraestructura estratégica.",
+        "Fiscalizar las zonas vulnerables del territorio, para prevenir los peligro de remociones en masa y de la exposición a sus efectos, tanto de los asentamientos humanaos como de la infraestructura estratégica.",
+        "No existe una propuesta."
+      ],
+        "correctAnswer": 1
+    },
+    {
+      "question": "Complete: Una Política de Estado relativa al Riesgo de Remociones en Masa, debería considerar otros Peligros Geológicos que también constituyen Riesgo para la población y la infraestructura, como Peligros Sísmicos, Volcánicos y de Inundación, y cuyo estudio está en el ámbito de las competencias geológicas de ……………",
+      "choices": [
+        "ONEMI.",
+        "MOP.",
+        "SERNAGEOMIN.",
+        "Ministerio del Interior"
+      ],
+        "correctAnswer": 2
+    },
+    {
+      "question": "Los factores que desencadenan fenómenos de remoción en masa son:",
+      "choices": [
+        "Políticas inadecuadas de gestión del riesgo.",
+        "Intensidad de precipitaciones, gravedad y sismos. ",
+        "Todo arado de tierra con maquinaria pesada. ",
+        "Instalación de viviendas en sectores inadecuados."
+      ],
+        "correctAnswer": 1
+    },
+    {
+      "question": "La reptación y solifluxión se caracteriza por:",
+      "choices": [
+        "Es un proceso imperceptible que en ocasiones pasa desapercibido.",
+        "Es un fenómeno espectacular que remueve gran parte de la superficie terrestre. ",
+        "Es un proceso que ocasiona inundaciones.",
+        "Es un proceso que genera grandes movimientos de masa"
+      ],
+        "correctAnswer" : 0
+    },
+    {
+      "question": "Los desprendimientos o caídas se generan principalmente en:",
+      "choices": [
+        "La costa y montañas",
+        "La depresión central",
+        "Secano costero",
+        "Secano interior"
+      ],
+        "correctAnswer": 0
+    },
+    {
+      "question": "Luego del gran aluvión ocurrido en la quebrada de Macul, región metropolitana, el año 1993, la principal obra de mitigación construida fueron: ",
+      "choices": [
+        "Diques.",
+        "Túneles de evacuación.",
+        "Piscinas de decantación.",
+        "Encauzamiento esteros."
+      ],
+        "correctAnswer": 2
+    },
+    {
+      "question": "El día 19 de junio de 1991, la ciudad de Antofagasta, sufrió los efectos de numerosos procesos de remoción en masa, que descendieron al casco urbano por 12 quebradas secas, provocando la muerte de 101 personas, 19 desaparecidos, 4.737 viviendas con daños severos y 402 viviendas destruidas, la principal obra de mitigación construida con posterioridad fueron: ",
+      "choices": [
+        "Encauzamiento esteros.",
+        "Decantadores.",
+        "Túneles de evacuación.",
+        "Piscinas de decantación."
+      ],
+        "correctAnswer": 1
+    },
+    {
+      "question": "En la región de La Araucanía existen sectores con mayor probabilidad de ocurrencia de fenómenos de remoción en masa, dado los factores que gatillan el proceso, de acuerdo a su conocimiento estos son: ",
+      "choices": [
+        "Temuco",
+        "Curarrehue-Lonquimay",
+        "Villarrica",
+        "Freire"
+      ],
+        "correctAnswer": 1
+    },
+    {
+      "question": "La reptación es un fenómeno que pasa desapercibido, por ello el volumen de material que desplaza equivale a:",
+      "choices": [
+        "Movimiento de suelo o escombros (1-10 mm/año).",
+        "Movimiento de suelo o escombros (1-10 mm/mensuales).",
+        "Movimiento de suelo o escombros (1-10 mm/diarios).",
+        "Movimiento de suelo o escombros (1-10 mm/hora)."
+      ],
+        "correctAnswer":0
+    },
+    {
+      "question": "Deslizamientos ocurridos cercanos a lagos en la Región de Los Ríos han provocado la manifestación de otros riesgos naturales entre los que destacan:",
+      "choices": [
+        "Inundación del río San Pedro.",
+        "Terremoto de Valdivia.",
+        "Erupción volcán Choshuenco.",
+        "Tsunami en Lago Maihue."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Las remociones en masa, por presentar un factor tan importante como la lluvia como agente que activa el proceso, ocurren de preferencia en la siguiente estación del año:",
+      "choices": [
+        "Verano.",
+        "Primavera",
+        "Otoño-Invierno",
+        "Todas"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Las remociones en masa han sido clasificadas por distintos autores en las siguientes categorías principales, indique aquella que no corresponde:",
+      "choices": [
+        "Desprendimientos o caídas.",
+        "Deslizamientos (rotacionales y traslacionales)",
+        "Flujos",
+        "Erupciones"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Cuál de los siguientes riesgos naturales pueden generar o activar procesos de remociones en masa:",
+      "choices": [
+        "Terremotos.",
+        "Inundaciones.",
+        "Volcanismo.",
+        "Todos los anteriores."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Cuál de los siguientes riesgos naturales pueden generar o activar procesos de remociones en masa:",
+      "choices": [
+        "Terremotos.",
+        "Inundaciones.",
+        "Volcanismo.",
+        "Todos los anteriores."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "El mayor efecto que provoca en la población chilena, la manifestación de fenómenos de remoción en masa es:",
+      "choices": [
+        "Miedo",
+        "Pánico",
+        "Pérdida de bienes materiales y vidas humanas.",
+        "Depresión"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Chile presenta en territorio específicos (cordillera y costa) una alta probabilidad de ocurrencia de fenómenos de Remoción en masa, frente a ello que medida debiera considerarse al momento de ocupar un terreno para instalar viviendas:",
+      "choices": [
+        "Realizar estudios y prospecciones pervio a evaluar la factibilidad de construcción.",
+        "Construir casas con materiales mas compactos de gran durabilidad.",
+        "Zonificar áreas de riesgo",
+        "Todas las anteriores"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Chile presenta en territorio específicos (cordillera y costa) una alta probabilidad de ocurrencia de fenómenos de Remoción en masa, frente a ello que medida debiera considerarse al momento de ocupar un terreno para instalar viviendas:",
+      "choices": [
+        "Realizar estudios y prospecciones pervio a evaluar la factibilidad de construcción.",
+        "Construir casas con materiales mas compactos de gran durabilidad.",
+        "Zonificar áreas de riesgo",
+        "Todas las anteriores"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Las remociones en masa han sido clasificadas por distintos autores en las siguientes categorías principales, indique aquella que no corresponde:",
+      "choices": [
+        "Desprendimientos o caídas.",
+        "Deslizamientos (rotacionales y traslacionales).",
+        "Flujos",
+        "Erupciones"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "En los flujos de barro el factor que activa el proceso es:",
+      "choices": [
+        "El sol.",
+        "El agua.",
+        "El viento",
+        "La humedad"
+      ],
+      "correctAnswer": 1
+    }
+  ]
+}

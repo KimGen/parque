@@ -1,0 +1,264 @@
+{
+"questions": [
+{
+"question": "Los movimientos sísmicos más destructivos se concentran en los bordes de:",
+"choices": [
+"Las montañas.",
+"Los océanos.",
+"Las placas tectónicas.",
+"Puntos calientes oceánicos."
+],
+"correctAnswer": 2
+},
+{
+"question": "Las ondas sísmicas se miden través de:",
+"choices": [
+"Daños producidos.",
+"Personas afectadas.",
+"Sismógrafos.",
+"Duración total del sismos."
+],
+"correctAnswer": 2
+},
+{
+"question": "La escala de Richter es la más importante para medir la intensidad de los sismos, esta incluye una graduación que incluye:",
+"choices": [
+"1 a 5 grados.",
+"1 a 7 grados.",
+"0 a 10 grados.",
+"1 a 9 grados."
+],
+"correctAnswer": 3
+},
+{
+"question": "¿Qué nombre recibe el registro gráfico de un terremoto?",
+"choices": [
+"Sismógrafo.",
+"Sismográfico.",
+"Sismograma.",
+"Sismologísmo."
+],
+"correctAnswer": 2
+},
+{
+"question": "En el caso de una isla muy cercana a un punto continental donde se produce un terremoto, ¿qué tipo de ondas llegarán hasta ella?",
+"choices": [
+"Tanto las P como las S.",
+"Ningún tipo de ondas.",
+"Las ondas S y las superficiales por que las P no se trasmiten por los líquidos.",
+"Las ondas P y las superficiales porque las S no se trasmiten por los líquidos."
+],
+"correctAnswer": 0
+},
+{
+"question": "La energía liberada durante el terremoto se transforma en:",
+"choices": [
+"Ondas sísmicas y calor.",
+"Ondas sísmicas internas y externas.",
+"Ondas P y S.",
+"En calor que posteriormente se trasforma en ondas sísmicas."
+],
+"correctAnswer": 0
+},
+{
+"question": "Un fuerte movimiento sísmico en una zona despoblada del desierto de atacama, ¿qué valoración tendrá?",
+"choices": [
+"Alta  en la escala de Richter y baja en la de Mercalli.",
+"Baja en las dos escalas.",
+"Alta en las dos escalas.",
+"Baja en la escala de Richter y alta en la de Mercalli."
+],
+"correctAnswer": 0
+},
+{
+"question": "¿Qué tipo de ondas son las primeras en ser detectadas por los sismógrafos?",
+"choices": [
+"Ondas R.",
+"Ondas P.",
+"Ondas S.",
+"Ondas L."
+],
+"correctAnswer": 1
+},
+{
+"question": "¿Qué es un mapa de riesgo?",
+"choices": [
+"Un mapa que indica la probabilidad de que ocurra un determinado fenómeno en una zona.",
+"Un mapa topográfico para localizar terremotos.",
+"Un mapa que indica los puntos negros de la circulación.",
+"Un mapa que indica la aptitud de habitabilidad de una zona."
+],
+"correctAnswer": 0
+},
+{
+"question": "¿Que nombre recibe el lugar donde se origina el terremoto?",
+"choices": [
+"Mesocentro.",
+"Sismocentro.",
+"Epicentro.",
+"Hipocentro."
+],
+"correctAnswer": 3
+},
+{
+"question": "¿Cuál de las siguientes medidas adoptarías en una zona con alto riesgo de terremotos?",
+"choices": [
+"Construir mi casa en lugares de mínimo riesgo.",
+"Construir mi casa con cimientos muy rígidos que puedan aguantar el terremoto.",
+"Construir mi casa cerca de otros edificios para que se sostengan unos a otros.",
+"Construirla en zonas con mucha gente para asegurarme de que habrá alguien que me pueda ayudar."
+],
+"correctAnswer": 0
+},
+{
+"question": "¿Cuál de las siguientes causas puede ser motivo de un terremoto?",
+"choices": [
+"Impacto de un meteorito.",
+"Erupciones volcánicas.",
+"Movimientos de la corteza terrestre.",
+"Todas las anteriores."
+],
+"correctAnswer": 3
+},
+{
+"question": "El terremoto que se produjo en chile en febrero de 2010 se debió a:",
+"choices": [
+"El movimiento y ajuste de las placas tectónicas.",
+"El movimiento de placas tectónicas y efectos volcánicos.",
+"Erupciones volcánicas.",
+"Intensa fuerza de corrientes marinas que provocaron maremotos."
+],
+"correctAnswer": 0
+},
+{
+"question": "Chile sufre frecuentes sismos debido a:",
+"choices": [
+"Se encuentra en una zona montañosa.",
+"Forma parte del llamado “Cinturón de Fuego del Pacífico”.",
+"La amenaza de maremotos.",
+"La falta de previsión para evitarlos."
+],
+"correctAnswer": 1
+},
+{
+"question": "El terremoto de mayor magnitud que se haya registrado a nivel mundial ocurrió en:",
+"choices": [
+"Sur de Chile.",
+"Centro-Norte de Chile.",
+"Chile Central.",
+"Centro Sur de Chile."
+],
+"correctAnswer": 0
+},
+{
+"question": "¿Cuál de las siguientes afirmaciones sobre las placas tectónicas es verdadera? ",
+"choices": [
+"Se localizan en el centro de la Tierra.",
+"Se localizan dentro del océano.",
+"Son pedazos rectangulares de metal y azufre.",
+"Toda la masa de tierra del planeta reposa sobre las placas tectónicas."
+],
+"correctAnswer": 3
+},
+{
+"question": "¿Cómo sería la superficie de la Tierra si no hubiera fallas tectónicas?",
+"choices": [
+"No habría océanos.",
+"No habría montañas.",
+"No habría bosques ni selvas.",
+"No habría desiertos."
+],
+"correctAnswer": 1
+},
+{
+"question": "¿Qué deduces del hecho de que las placas tectónicas siempre se están moviendo?",
+"choices": [
+"Que se forman volcanes cada día.",
+"Que la forma, la ubicación y la corteza terrestre han cambiado mucho a lo largo del tiempo.",
+"Que todo el tiempo nos estamos moviendo, como en un barco, pero no lo sentimos.",
+"Que las placas intercambian lugares las unas con las otras."
+],
+"correctAnswer": 1
+},
+{
+"question": "¿En que se diferencian las ondas superficiales de las ondas P?",
+"choices": [
+"Las ondas superficiales son las más lentas y peligrosas; las ondas P son las más rápidas.",
+"Las ondas P son las que golpean la parte alta de los edificios y las superficiales solo la fachada.",
+"Las ondas P son las más peligrosas; las ondas superficiales son las menos peligrosas.",
+"Las ondas P causan los ríos y; las ondas superficiales forman bosques."
+],
+"correctAnswer": 0
+},
+{
+"question": "¿Por qué algunas veces se dice que las fallas son “fronteras activas”? Elige la mejor respuesta.",
+"choices": [
+"Porqué hay activistas socialistas en todas esas fronteras.",
+"Porque sirven de fronteras entre naciones.",
+"Porque las placas tectónicas se mueven y se desplazan activamente a lo largo de las fallas.",
+"Porque las personas deben evitar activamente en las fallas para no salir heridas."
+],
+"correctAnswer": 2
+},
+{
+"question": "En la frase: “La escala de Richter mide la potencia y la duración de los eventos sísmicos”,¿Qué significa “potencia”?",
+"choices": [
+"Velocidad.",
+"Fuerza.",
+"Tipo.",
+"Tiempo."
+],
+"correctAnswer": 1
+},
+{
+"question": "Si un edificio colapsa en un terremoto, ¿qué tipo de onda contribuyo al colapso? ",
+"choices": [
+"Probablemente una onda superficial.",
+"Probablemente una onda S.",
+"Probablemente una onda secundaria.",
+"Probablemente una onda P."
+],
+"correctAnswer": 0
+},
+{
+"question": "¿En que sentido crees que debe avanzar la educación en cuanto a terremotos en nuestro país?",
+"choices": [
+"Aprender a reconstruir después del desastre.",
+"Tener conciencia sobre como prevenir los daños y aprender a reaccionar frente al fenómeno.",
+"Aprender a prevenir que los terremotos ocurran.",
+"Ninguna de las anteriores."
+],
+"correctAnswer": 1
+},
+{
+"question": "¿Qué es la licuefacción?",
+"choices": [
+"La liberación de energía acumulada entre placas.",
+"Una fractura de la corteza terrestre.",
+"Una anomalía en el manto superficial.",
+"Un proceso físico que tiene lugar durante algunos terremotos."
+],
+"correctAnswer": 3
+},
+{
+"question": "¿A qué profundidad tienen lugar los terremotos?",
+"choices": [
+"Entre los 2000 a 2790 kilómetros bajo la corteza.",
+"Entre los 32 a 43 kilómetros bajo sobre el núcleo externo.",
+"Desde los 850 kilómetros de profundidad.",
+"Desde los 1500 kilómetros de profundidad."
+],
+"correctAnswer": 2
+},
+{
+"question": "¿Cuándo se utilizó el primer instrumento para grabar un terremoto?",
+"choices": [
+"En China en el año 132 A.C.",
+"En Rusia a fines del siglo XIX.",
+"En Japón en el año 1867.",
+"En Estados Unidos el año 1845."
+],
+"correctAnswer": 0
+}
+]
+}

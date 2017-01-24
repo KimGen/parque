@@ -1,0 +1,224 @@
+{
+  "questions": [
+    {
+      "question": "La corteza de la tierra está constituida principalmente por:",
+      "choices": [
+        "Hierro.",
+        "Silicatos.",
+        "Óxidos.",
+        "Níquel."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "La capa más grande de la tierra en cuanto a su volumen es:",
+      "choices": [
+        "Núcleo.",
+        "Dorsal.",
+        "Manto.",
+        "Corteza."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "El 95% de los volcanes que se ubican en el margen de las placas continentales son:",
+      "choices": [
+        "Estratovolcanes.",
+        "Volcán escudo.",
+        "Islas.",
+        "Todas las anteriores."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "¿Cuántos volcanes activos existen en el mundo?:",
+      "choices": [
+        "1.500",
+        "2",
+        "100.000",
+        "Ninguno"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "¿Cuál es el volcán más grande del mundo?:",
+      "choices": [
+        "Yellowstone.",
+        "Krakatoa",
+        "Mauna Loa",
+        "Llaima"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Cuál es la caldera más grande del mundo?:",
+      "choices": [
+        "Yellowstone.",
+        "Krakatoa.",
+        "Mauna Loa.",
+        "Llaima."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "¿Cuál es el volcán Más activo de Chile?:",
+      "choices": [
+        "Villarrica.",
+        "Llaima.",
+        "Hudson.",
+        "Cordón Caulle."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "La erupción de mayor impacto en el mundo fue en 1815 del Tambora que generó por inanición:",
+      "choices": [
+        "1.000.000 de muertes.",
+        "92.000 muertes.",
+        "300 muertes.",
+        "10 muertes."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Los flujos piroclásticos son corridas de rocas incandescentes que pueden bajar a una velocidad de hasta:",
+      "choices": [
+        "5 km/hr.",
+        "1.000 km/hr.",
+        "500 km/hr.",
+        "100 km/hr."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Si te encuentras cerca de una área volcanica y se presenta una alerta roja volcánica:",
+      "choices": [
+        "Debes cubrirte la cabeza.",
+        "Debes esconderte debajo de tu cama.",
+        "Debes mantener la calma y prepararte con tu familia para evacuar.",
+        "Debes correr fuera de la casa con tu familia."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Encontramos volcanes escudos que presentan poca altura, pero una gran caldera de donde salen ríos de lavas que desembocan en el mar:",
+      "choices": [
+        "Chile.",
+        "Japón.",
+        "Alemania.",
+        "Hawaii."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Las lavas producen una gran cantidad de rocas:",
+      "choices": [
+        "Laja.",
+        "Basálticas.",
+        "Greda.",
+        "Yeso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Una de las erupciones más famosas de la historia que sepultó una ciudad completa bajo cenizas fue del volcán:",
+      "choices": [
+        "Yellowstone.",
+        "Krakatoa.",
+        "Vesubio.",
+        "Llaima"
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Los volcanes son una fuente de recursos:",
+      "choices": [
+        "Minerales y energía.",
+        "Agua.",
+        "Alimento.",
+        "Petróleo."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Los volcanes Hawaianos se caracterizan por presentar erupciones de tipo explosivas.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Los vulcanólogos y geólogos son parte de los grupos especializados que estudian las características y evolución de la Tierra.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "El semáforo es un instrumento de advertencia que usa la autoridad para informar sobre el riesgo volcánico.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Al momento de una erupción volcánica donde hay una gran cantidad de ceniza en el aire debo usar mascarilla.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Sernageomin es el servicio encargado en dar la alerta a la población ante una erupción volcánica.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Uno de los factores de peligrosidad volcánica son los temblores.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "El Cordón Caulle es un volcán.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "En 1964 el Villarrica hizo una erupción que destruyó la mitad de la localidad de Coñaripe en la región de Los Ríos.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "La región que presenta la mayor cantidad de volcanes activos en Chile es la región de La Araucanía.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Melipeuco es una de las localidades que presenta mayor riesgo volcánico en la región de La Araucanía.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}

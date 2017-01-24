@@ -1,0 +1,215 @@
+{
+  "questions": [
+    {
+      "question": "La altura de inundación de una ola de tsunami se llama:",
+      "choices": [
+        "Mercalli.",
+        "Runup.",
+        "Altura de la Ola.",
+        "Maremoto."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "El tsunami que genera daños extendidos sobre más de 500km a lo largo de la línea costera y de altura de inundación de 16-24m es de grado:",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Después del terremoto de 1960 la localidad de Puerto Saavedra fue:",
+      "choices": [
+        "Relocalizada en las áreas altas.",
+        "Fue repoblado en el mismo lugar.",
+        "Se erradicaron a todos sus habitantes.",
+        "Actualmente es una ciudad fantasma."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "¿Cuál ha sido el tsunami registrado más destructivo en la historia de Chile?:",
+      "choices": [
+        "Constitución 2010.",
+        "Valdivia 1837.",
+        "Valdivia 1960.",
+        "Antofagasta 1995."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "¿Cuál ha sido el tsunami más destructivo registrado en el mundo en los últimos 20 años?:",
+      "choices": [
+        "Sumatra 2004.",
+        "Japón 2011.",
+        "Chile 2010.",
+        "Japón 1993."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "El tsunami de 1960 en Chile, registro una altura máxima de inundación de:",
+      "choices": [
+        "50 metros.",
+        "15 metros.",
+        "1,2 metros.",
+        "0,5 metros."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Además de movimientos sísmicos los tsunamis pueden producirse por:",
+      "choices": [
+        "Precipitaciones.",
+        "Erupciones volcánicas.",
+        "Incendios.",
+        "Todas las anteriores."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Un Tsunami que se genera en Chile también puede llegar hasta:",
+      "choices": [
+        "Hawaii.",
+        "Japón.",
+        "Filipinas.",
+        "Todas las anteriores."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Las condiciones para que se produzca un tsunami son:",
+      "choices": [
+        "Que el epicentro se encuentre cerca de la costa.",
+        "Que el hipocentro se encuentre a una profundidad menor a 60km.",
+        "La magnitud del terremoto sea mayo a Mw 7,0.",
+        "Todas las anteriores."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Un tsunami puede tener hasta 10 o más ondas destructivas en un lapso de:",
+      "choices": [
+        "Hasta 10 minutos.",
+        "Hasta 4 horas.",
+        "Hasta 12 horas.",
+        "Hasta 3 días."
+      ],
+      "correctAnswer": 2
+    },
+    {
+      "question": "Encontramos tsunamis de tipo tectónico en:",
+      "choices": [
+        "Chile.",
+        "Japón.",
+        "Indonesia.",
+        "Todas las anteriores."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Los tsunamis se pueden producir por:",
+      "choices": [
+        "Terremotos.",
+        "Erupciones volcánicas.",
+        "Meteoritos.",
+        "Todas las anteriores."
+      ],
+      "correctAnswer": 3
+    },
+    {
+      "question": "Los tsunamis se pueden generar en:",
+      "choices": [
+        "Lagos y mares.",
+        "Sólo en mares.",
+        "En lagos, mares y océanos.",
+        "Sólo en océanos"
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Los tsunamis pueden ser provocados por terremotos, erupciones volcánicas y precipitaciones",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "El Centro de Alerta de Tsunami del Pacífico (PTWC) en Ewa Beach, Hawaii, sirve como el Centro Internacional de Alerta para los Tsunamis que presenten un riesgo para todo el Pacífico",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Los tsunamis históricos son estudiados a través de los depósitos de arena que con su fuerza dejan en las costas donde se manifiestan.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Antes de manifestarse un tsunami el mar se recoge varios metros hacia el horizonte.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "El Servicio Oceanográfico de la Armada de Chile (SHOA) es el encargado de monitorear los incendios forestales.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "Una de las condiciones que se dan para que se genere un tsunami un terremoto sobre Mw 7,0.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "En Aysén en el año 2007 fue un tsunami.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "question": "En 1960 hubo un gran terremoto y posterior tsunami en la ciudad de Valdivia que destruyó la ciudad y que generó muchas muertes.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "En las costas de Chile se pueden presentar grandes tsunamis.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      "correctAnswer": 0
+    },
+    {
+      "question": "Puerto Saavedra y Valdivia son ciudades con un alto riesgo de tsunamis.",
+      "choices": [
+        "Verdadero.",
+        "Falso."
+      ],
+      ],
+      "correctAnswer": 0
+    }
+  ]
+}
